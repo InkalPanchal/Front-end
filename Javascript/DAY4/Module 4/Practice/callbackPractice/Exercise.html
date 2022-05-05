@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Prac_Exercise module4</title>
+</head>
+<body>
+    <form action="#" method="post">
+        <input type="text" name="num1" id=""><br>
+        <input type="text" name="num2" id="">
+        <p id="result"></p>
+        <button type="button" onclick="demo()">getData()</button>
+    </form>
+
+    <script type="text/javascript">
+        function demo() {
+            var element = document.createElement("button");
+            var textNode = document.createTextNode("Hello everyone!");
+            element.appendChild(textNode);
+            document.body.appendChild(element);
+            element.addEventListener('click', callable);
+
+            function callable(){
+                alert("Hello welcome everyone!");
+            }
+
+
+            var element1 = document.createElement("button");
+            var textNode1 = document.createTextNode("Hello!");
+            document.body.appendChild(element1);
+            element1.appendChild(textNode1);
+
+            element1.addEventListener('click', () => {
+                alert("Hi there!");
+            })
+
+
+            document.getElementById("result").innerHTML = "Welcome";
+        }
+        
+
+        function add(callback){
+            sum = 0;
+            for(let i=0; i<87678978; i++){
+                sum += i;
+            }
+            callback(sum);
+
+        }
+        add((result) => {
+            alert(result);
+        })
+    </script>
+</body> 
+</html>

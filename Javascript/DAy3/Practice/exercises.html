@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <h4>Use the getElementById method to find the p element, and change its text to "Hello".</h4>
+    <p id="demo"></p>
+
+    <h4>Use the getElementsByTagName method to find the first p element, and change its text to "Hello".</h4>
+    <p id="demo1"></p>
+
+    <h4>Change the text of the first element that has the class name "test".</h4>
+    <p class="test"></p>
+    <p class="test"></p>
+
+    <h4>Change image src value</h4>
+    <img src="../../../My Work/Media/book.png" onclick="myImage();" id="image" alt="">
+
+    <h4>Use HTML DOM to change the value of the input field.</h4>
+    <input type="text" name="" id="text" >
+
+    <h4>Change color of p and fontsize to 40px</h4>
+    <p id="new">Inkal Panchal</p>
+
+    <h4>Use the CSS display property to hide the p element.</h4>
+    <p id="hide">Hidden text</p>
+    <p>Above paragragh is hidden</p>
+
+    <h4>Use the eventListener to assign an onclick event to the button element.</h4>
+        <button id="demo2">Click me!</button>
+    <script>
+        document.getElementById("demo").innerHTML = "Hello!";
+        document.getElementsByTagName("p")[1].innerHTML = "Hello!";
+        document.getElementsByClassName("test")[0].innerHTML = "Hi there!";
+
+        function myImage(){
+            document.getElementById("image").src = "../../../My Work/Media/logo.png";
+        }
+
+        document.getElementById("text").value = "Panchal";
+        document.getElementById("new").style.color = "red";
+        document.getElementById("new").style.fontSize = "40px";
+        document.getElementById("hide").style.display = "none";
+
+        document.getElementById("demo2").addEventListener("click",myFunction);
+</script>
+</body>
+</html>

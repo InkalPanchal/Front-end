@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>DAY2 JS Practice Exercise4</title>
+
+</head>
+<body>
+<h1>Array Practice operation </h1>
+<p id="fruit"></p>
+<p id="fruit1"></p>
+<p id="fruit2"></p>
+<p id="dish"></p>
+<button type="button" onclick="pushing();">Push</button>
+<button type="button" onclick="popped();">Pop</button>
+<button type="button" onclick="shifting();">Shift</button>
+<button type="button" onclick="unshifting();">Unshift</button>
+<button type="button" onclick="Delete();">Delete</button>
+<button type="button" onclick="concating();">Concat</button>
+
+    <script>
+       const fruits = ["Apple", "Kiwi", "Orange", "Grapes"];
+       document.getElementById("fruit").innerHTML = "<h4> Fruits:</h4> "+fruits ;
+       document.getElementById("fruit1").innerHTML = "<h4>Array to String</h4>"+fruits.toString() ;
+        function pushing(){
+            document.getElementById("fruit").innerHTML = "<h4> Elements in array:</h4> "+fruits.push("Lemon");
+            document.getElementById("fruit1").innerHTML = "<h4>Pushed Lemon to string:</h4> "+ fruits;
+        }
+
+        function popped(){
+            document.getElementById("fruit").innerHTML = "<h4>Popped element:</h4> " + fruits.pop();
+            document.getElementById("fruit1").innerHTML = "<h4>Array:</h4> " + fruits;
+        }
+
+        function shifting(){
+            document.getElementById("fruit").innerHTML = "<h4>Shifted element:</h4> "+ fruits.shift();
+            document.getElementById("fruit1").innerHTML = "<h4>Shift element</h4>"+fruits;
+        }
+
+        function unshifting(){
+            document.getElementById("fruit").innerHTML = "<h4>Elements in array: </h4>"+ fruits.unshift("Banana");
+            document.getElementById("fruit1").innerHTML = "<h4>Add element at start:</h4> "+fruits;
+        }
+       
+        fruits[fruits.length] = "Guava";
+        document.write("<h4>Add one fruit to array:</h4> "+fruits);
+
+        function Delete(){
+            document.getElementById("fruit").innerHTML = "<h4>Delete element from array: </h4>"+ delete fruits[0];
+            document.getElementById("fruit1").innerHTML = "<h4>First element:</h4> "+fruits[0];
+            document.getElementById("fruit2").innerHTML = "<h4>Remaining elements:</h4> "+fruits;
+        }
+
+        function concating(){
+            const food =["Indian", "Italian", "Chinese", "Japanese"];
+            const dish =fruits.concat(food);
+        
+            document.getElementById("dish").innerHTML = "<h4>Merge fruits and food :</h4> "+dish;
+
+            document.getElementById("fruit").innerHTML = "<h4>Add pineapple:</h4> " +fruits.concat("Pineapple");
+        }
+    </script>
+</body>
+</html>

@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>DAY2 JS Assignment</title>
+</head>
+<body>
+    
+    <label for="date">Enter Date:</label>
+    <input type="text" id="date1">
+    <p id="demo"></p>
+    <button type="button" onclick="myFunction();">Submit</button>
+
+    <script>
+        
+        function myFunction() {
+            var a = document.getElementById('date1').value;
+
+            var b = a.toString();
+
+            var day = b.slice(3,5);
+            var month = b.slice(0,2);
+            var year = b.slice(6,11);
+            var count = 0 ;
+            
+                if ( day >= 1 && day <= 31 ) {
+                    
+                    if( month >= 1 && month <= 12){
+                        var date = month + " / " + day + " / " + year;
+                    } else {
+                        alert("Month should be in between 1 and 12!");
+                        count++;
+                    }    
+                } else {
+                    alert("Day shuld be digit and between 1 to 31");
+                    count++;
+                    }
+            
+                if (count > 0){
+                    document.getElementById("demo").innerHTML = "You entered invalid date!";
+                } else {
+                    document.getElementById("demo").innerHTML = date;
+                }
+        }
+
+    </script>
+</body>
+</html>

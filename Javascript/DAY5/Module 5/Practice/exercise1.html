@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Area of Circle</title>
+
+    <script type="text/javascript">
+        
+        function areaOfCircle() {
+            var radius = document.getElementById("radius").value;
+            document.getElementById("rad").innerHTML = "<h4>Circle radius: </h4>"+ radius;
+            const area = function (r) {return 3.14 * r * r; }
+            document.getElementById("result").innerHTML = "<h4>Area of circle is: </h4>"+ area(radius);
+        }
+
+    </script>
+    
+</head>
+<body>
+
+    <h1>Area Of Circle using Function Expression</h1>
+    <label for="radius">Enter radius for circle: </label>
+    <input type="number" id="radius">
+    <p id="rad"></p>
+    <p id="result"></p>
+    <button type="button" onclick="areaOfCircle();">Button</button>
+
+    
+</body>
+</html>

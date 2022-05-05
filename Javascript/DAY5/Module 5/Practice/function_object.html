@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    
+    <h1>Invoking a Function as a Method</h1>
+
+    <p id="name"></p>
+
+    <script type="text/javascript">
+        const myObject = {
+            FirstName: "Inkal",
+            LastName: "Panchal",
+            FullName: function (){
+                return this.FirstName + " " + this.LastName;
+                //return this; //The value of this, in an object method, is the owner object.
+            }
+        }
+        document.getElementById("name").innerHTML = myObject.FullName();
+    </script>
+</body>
+</html>

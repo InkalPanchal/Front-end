@@ -1,0 +1,144 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Exercise2 jQuery</title>
+    <link rel="stylesheet" href="../../../../node_modules/bootstrap/dist/css/bootstrap.min.css">
+    <link rel="stylesheet" href="../../../../BOOTSTRAP/bootstrap_index.css">
+    <style>
+        a {
+            text-decoration: none;
+        }
+    </style>
+    <script src="../../../jquery.min.js"></script>
+    <script>
+        $(document).ready(function (){
+            $("#hideShow").mouseenter(function(){
+                $("#helpText").toggle();
+            });
+
+            $("#tech").each(function(){
+                $(this).click(function(){
+                    console.log(this)
+                    var value = $("input[name='technology']:checked").val()
+                    if (value) {
+                    $("#selected_radio").text("You have selected: "+value);
+                    }
+                    
+                })
+                
+            });
+            
+            // $("#tech").each(function(){
+            //     $("#techno").click(function(){
+            //         var value1 = $("input[name='technology']").attr("checked","checked")
+            //         if(value){
+            //          $("#selected_radio").text("You have selected: "+value);
+
+            //         }
+
+            //     })
+            // });
+        })
+    </script>
+</head>
+<body style="margin: 0;">
+
+    <div class="fullBody">
+        <nav id="navbar" class="navbar" aria-label="navbar">
+            <div class="ms-auto ">
+                <a href="../../../../My Work/HTML/HTML.html" class="px-2 text-white">HTML</a>
+                <a href="../../../../My Work/HTML/CSS.html" class="px-2 text-white">CSS</a>
+                <a href="../../../../BOOTSTRAP/bootstrap_index.html" class="px-2 text-white">BOOTSTRAP</a>
+                <a href="../../../../Javascript/javascriptIndex.html" class="px-2 text-white">JAVASCRIPT</a>
+                <a href="../../../jQueryIndex.html" class="px-2 text-white">jQuery</a>
+            </div>
+        </nav>
+        <main id="main" class="p-4">
+            <div id="div" >
+                <h2 id="heading">Hide/Show text</h2>
+                <span id="helpText" class="h5">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Modi, eveniet?</span><br><br>
+                <button id="hideShow" class="btn border border-2 btn-secondary mb-5">Hide/Show</button>
+            </div>
+        
+            <form action="">
+                <label for="technology" class="h3">Please select your technology:</label><br>
+                <div id="tech" class="h5">
+                    <input type="radio" name="technology" value="PHP" id="PHP">      
+                    <label for="PHP" id="techno">PHP</label>
+        
+                    <input type="radio" name="technology" value="ASP.NET" id="ASP.NET">  
+                    <label for="ASP.NET" id="techno">ASP.NET</label>
+        
+                    <input type="radio" name="technology" value="ASP" id="ASP">      
+                    <label for="ASP" id="techno">ASP</label>
+        
+                    <input type="radio" name="technology" value="JSP" id="JSP">      
+                    <label for="JSP" id="techno">JSP</label>
+        
+                    <input type="radio" name="technology" value="PERL" id="PERL">     
+                    <label for="PERL" id="techno">PERL</label>
+        
+                    <input type="radio" name="technology" value="COLD FUSION" id="COLD FUSION">
+                    <label for="COLD FUSION" id="techno">COLD FUSION</label>
+        
+                    <input type="radio" name="technology" value="Other" id="Other">    
+                    <label for="Other" id="techno">Other</label>
+        
+        
+                </div>
+        
+                <span id="selected_radio" class="h5"></span><br>
+                
+            </form>
+        </main> 
+        <div id="sidebar" class="sidebar" style="padding-right: 30px;">
+            <ul style="list-style-type: none;">
+                <li class="day"> DAY1
+                    <ul style="list-style-type: disc;">
+                        <li>Practice
+                            <ul>
+                                <li><a href="../../../Day1/Module 1/Practice/exercise1.html">Exercise1</a></li>
+                                <li><a href="../../../Day1/Module 1/Practice/exercise2.html">Exercise2</a></li>
+                                <li><a href="../../../Day1/Module 1/Practice/fadeIn_fadeOut.html">Exercise3 (fade-in,fade-out)</a></li>
+                                <li><a href="../../../Day1/Module 1/Practice/focus_blur.html">Exercise4 (focus, blur))</a></li>
+                                <li><a href="../../../Day1/Module 1/Practice/hide.html">Exercise5 (hide)</a></li>
+                                <li><a href="../../../Day1/Module 1/Practice/mouse_event.html">Exercise6 (Mouse events)</a></li>
+                                <li><a href="../../../Day1/Module 1/Practice/prac.html">Exercise7</a></li>
+                                <li><a href="../../../Day1/Module 1/Practice/toggle.html">Exercise8 (toggle)</a></li>
+                            </ul>
+                        </li>
+                        <li>Assignment
+                            <ul>
+                                <li><a href="../../../Day1/Module 1/Assignment/droplist.html">Assignment1</a></li>
+                            </ul>
+                        </li>
+                    </ul>
+                </li>
+                <li class="day"> DAY2
+                    <ul style="list-style-type: disc;">
+                        <li>Practice
+                            <ul>
+                                <li><a href="../../../Day2/Module2/Practice/traversing.html">Exercise1 (Traversing)</a></li>
+                                <li><a href="../../../Day2/Module2/Practice/siblings.html">Exercise2 (Siblings)</a></li>
+                                <li><a href="../../../Day2/Module2/Practice/Ajax_prac/ajaxMethod.html">Exercise3 (Ajax)</a></li>
+                                <li><a href="../../../Day2/Module2/Practice/Ajax_prac/getMethod.html">Exercise4 (getMethod)</a></li>
+                                <li><a href="../../../Day2/Module2/Practice/Ajax_prac/getJSONMethod.html">Exercise4 (getJSONMethod)</a></li>
+                            </ul>
+                        </li>
+                        <li>Assignment
+                            <ul>
+                            <li><a href="../../../Day2/Module2/Assignment/getJSONMethod1.html">Assignment1</a></li>
+                            </ul>
+                        </li>
+                    </ul>
+                </li>
+            </ul>
+        </div>
+    </div>
+
+    
+</body>
+</html>

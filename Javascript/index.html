@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="../node_modules/bootstrap/dist/css/bootstrap.min.css">
+    <title>Document</title>
+</head>
+<body>
+    <div class="m-5">
+        <label for="name">String:</label>
+        <p id="name"></p>
+        <p id="demo"></p>
+    </div>
+    <script type="text/javascript">
+        
+        var str = "Inkal Panchal jkl";
+        document.getElementById("name").innerHTML = str;
+        var result = str.indexOf("l")
+        var result2 = str.indexOf("l",result + 1)
+        var result3 = str.indexOf("l",result2 + 1)
+        document.getElementById("demo").innerHTML = "Index of l is: "+ result3;
+
+    </script>
+</body>
+</html>

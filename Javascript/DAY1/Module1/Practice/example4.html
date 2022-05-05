@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>JS Practice</title>
+
+    <script type="text/javascript">
+        function checkrange(){
+            var value= document.getElementById('price1').value;
+            var paragraph = document.getElementsByTagName('p');
+            var paragraph_display= paragraph[0];
+            if(value>= 80)
+            {
+                display="block";
+            }else{
+                display="none";
+            }
+            paragraph_display.style.display= display;
+        }
+    </script>
+</head>
+<body>
+    <h1>Check range</h1>
+
+    <form action="">
+        <input type="number" id="price1" min="1" max="100" oninput="checkrange();">
+        
+    </form>
+    <p style="display: none;">Warning: you are running 20% of your limit!!</p>
+    <button onclick="print()">Print this page</button>
+</body>
+</html>

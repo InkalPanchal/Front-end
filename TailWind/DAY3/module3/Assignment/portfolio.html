@@ -1,0 +1,430 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>My Portfolio</title>
+    <link rel="stylesheet" href="https://unpkg.com/flowbite@1.3.4/dist/flowbite.min.css" />
+    <!-- CSS -->
+    <link rel="stylesheet" href="../../../dist/css/styles.css">
+
+    <!-- font awesome -->
+    <script src="https://kit.fontawesome.com/d2d10cf53a.js" crossorigin="anonymous"></script>
+
+    <script src="https://unpkg.com/flowbite@1.3.4/dist/flowbite.js"></script>
+</head>
+<body id="top">
+    <div class="fixed top-0 w-full" style="background-color: #1f1f40;">
+        <div class="px-10 py-5 md:px-32">
+            <nav class="text-white md:flex md:justify-between">
+                <div class="flex">    
+                    <div  class="inline sm:block">
+                        
+                        <a href="#top"><img src="./img/logo-.png" alt=""></a>
+                    </div>
+                    <div class="inline ml-auto md:hidden" id="burger">
+                        <svg class="w-5" xmlns="http://www.w3.org/2000/svg" class="w-6 h-6" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16M4 18h16" />
+                        </svg>
+                    </div>
+                </div>
+                <ul class="items-center hidden text-base font-semibold text-center uppercase cursor-pointer md:space-x-2 md:flex" id="menu" >
+                        <li class="p-3">
+                            <a href="#" class="md:flex ">
+                                <button id="dropdownButton" data-dropdown-toggle="dropdown" class="text-base font-semibold uppercase " >Home</button>
+                                <svg  xmlns="http://www.w3.org/2000/svg" class="inline w-4 h-4 md:m-auto md:ml-2" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2">
+                                    <path stroke-linecap="round" stroke-linejoin="round" d="M19 9l-7 7-7-7" />
+                                </svg>
+                            </a>
+                        </li>
+                        <div class="z-10 hidden text-base list-none bg-white divide-y divide-gray-100 rounded shadow w-44 dark:bg-gray-700" id="dropdown"> 
+                            <div class="text-black bg-white" aria-labelledby="dropdownButton">
+                                <a href="#home1" class="block px-4 py-2 text-sm text-gray-700 transition duration-500 ease-out hover:bg-gray-100 dark:hover:bg-gray-600 dark:text-gray-200 dark:hover:text-white">Home2</a>
+                                <a href="#home1" class="block px-4 py-2 text-sm text-gray-700 transition duration-500 ease-out hover:bg-gray-100 dark:hover:bg-gray-600 dark:text-gray-200 dark:hover:text-white">Home3</a>
+                                <a href="#home1" class="block px-4 py-2 text-sm text-gray-700 transition duration-500 ease-out hover:bg-gray-100 dark:hover:bg-gray-600 dark:text-gray-200 dark:hover:text-white">Home4</a>
+                                
+                            </div>
+                        </div>
+                    
+                        <li class="p-3">
+                            <a href="#" class="md:flex">
+                                <button  id="dropdownButton1" data-dropdown-toggle="dropdown1" class="text-base font-semibold uppercase">About</button>
+                                <svg  xmlns="http://www.w3.org/2000/svg" class="inline w-4 h-4 md:m-auto md:ml-2" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2">
+                                    <path stroke-linecap="round" stroke-linejoin="round" d="M19 9l-7 7-7-7" />
+                                </svg>
+                            </a>
+                        </li>    
+                            <div class="z-10 hidden text-base list-none bg-white divide-y divide-gray-100 rounded shadow w-44 dark:bg-gray-700" id="dropdown1"> 
+                                <div class="text-black bg-white" aria-labelledby="dropdownButton1">
+                                    <a href="#about" class="block px-4 py-2 text-sm text-gray-700 hover:bg-gray-100 dark:hover:bg-gray-600 dark:text-gray-200 dark:hover:text-white">About</a>
+                                    <a href="#about" class="block px-4 py-2 text-sm text-gray-700 hover:bg-gray-100 dark:hover:bg-gray-600 dark:text-gray-200 dark:hover:text-white">About Me</a>
+                                </div>
+                            </div>
+                        
+                    
+                        <li class="p-3">
+                            <a href="#" class="md:flex">
+                                <button  id="dropdownButton2" data-dropdown-toggle="dropdown2" class="text-base font-semibold uppercase">Blog</button>
+                                <svg  xmlns="http://www.w3.org/2000/svg" class="inline w-4 h-4 md:m-auto md:ml-2" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2">
+                                    <path stroke-linecap="round" stroke-linejoin="round" d="M19 9l-7 7-7-7" />
+                                </svg>
+                            </a>
+                            <div class="z-10 hidden text-base list-none bg-white divide-y divide-gray-100 rounded shadow w-44 dark:bg-gray-700" id="dropdown2"> 
+                                <div class="text-black bg-white" aria-labelledby="dropdownButton2">
+                                    <a href="#blog" class="block px-4 py-2 text-sm text-gray-700 hover:bg-gray-100 dark:hover:bg-gray-600 dark:text-gray-200 dark:hover:text-white">Blog one</a>
+                                    <a href="#blog" class="block px-4 py-2 text-sm text-gray-700 hover:bg-gray-100 dark:hover:bg-gray-600 dark:text-gray-200 dark:hover:text-white">blog two</a>
+                                </div>
+                            </div>
+                        </li>
+                        
+                        <li class="p-3">
+                            <a href="#home1">
+                                <span class="text-base uppercase">Contact</span>
+                            </a>
+                        </li>
+                </ul>
+            </nav>
+        </div>
+    </div>
+
+    <div id="home1" class="bg-no-repeat" style="background-image: url('./img/bg.jfif'); background-size: cover;">
+        <div class="px-10 mt-16 md:flex md:px-32 md:mt-20">
+                <div class="p-12 m-auto text-white w-128 justify-center">
+                    <h1 class="text-5xl font-bold md:text-7xl mb-9 ">Design Studio</h1>
+                    <p class="mb-7">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Quo odit animi, cum ad ea similique!</p>
+                    <button class="p-3 px-4 transition duration-500 ease-out bg-blue-900 rounded hover:bg-blue-700 ">Contact Us</button>
+                </div>
+                <img class="hidden mt-20 md:inline" src="img/banner-3.png" title="image" alt="image">
+        </div>
+    </div>
+   <div class="px-10 py-20 space-x-4 text-white bg-no-repeat bg-cover md:px-32 md:flex opacity" style="background-image: url('./img/bg-3.jfif');">
+       <div class="ml-4 md:basis-1/3 md:w-1/3 " >
+            <svg xmlns="http://www.w3.org/2000/svg" style="color: #e47aad;" class="w-16 h-16 " fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2">
+                <path stroke-linecap="round" stroke-linejoin="round" d="M11 5H6a2 2 0 00-2 2v11a2 2 0 002 2h11a2 2 0 002-2v-5m-1.414-9.414a2 2 0 112.828 2.828L11.828 15H9v-2.828l8.586-8.586z" />
+            </svg>
+            <h1 class="my-4 text-2xl font-bold">Brand Design</h1>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptatibus recusandae esse voluptatum ea optio minima.</p>
+       </div>
+       <div class="md:basis-1/3 md:w-1/3 ">
+            <svg xmlns="http://www.w3.org/2000/svg" style="color: #e47aad;" class="w-16 h-16" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2">
+                <path stroke-linecap="round" stroke-linejoin="round" d="M11 5.882V19.24a1.76 1.76 0 01-3.417.592l-2.147-6.15M18 13a3 3 0 100-6M5.436 13.683A4.001 4.001 0 017 6h1.832c4.1 0 7.625-1.234 9.168-3v14c-1.543-1.766-5.067-3-9.168-3H7a3.988 3.988 0 01-1.564-.317z" />
+            </svg>
+            <h1 class="my-4 text-2xl font-bold">Seo & Marketing</h1>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptatibus recusandae esse voluptatum ea optio minima.</p>
+       </div>
+       <div class="md:basis-1/3 md:w-1/3 ">
+            <svg xmlns="http://www.w3.org/2000/svg" style="color: #e47aad;" class="w-16 h-16" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2">
+                <path stroke-linecap="round" stroke-linejoin="round" d="M11.049 2.927c.3-.921 1.603-.921 1.902 0l1.519 4.674a1 1 0 00.95.69h4.915c.969 0 1.371 1.24.588 1.81l-3.976 2.888a1 1 0 00-.363 1.118l1.518 4.674c.3.922-.755 1.688-1.538 1.118l-3.976-2.888a1 1 0 00-1.176 0l-3.976 2.888c-.783.57-1.838-.197-1.538-1.118l1.518-4.674a1 1 0 00-.363-1.118l-3.976-2.888c-.784-.57-.38-1.81.588-1.81h4.914a1 1 0 00.951-.69l1.519-4.674z" />
+            </svg>
+            <h1 class="my-4 text-2xl font-bold">Creative Design</h1>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptatibus recusandae esse voluptatum ea optio minima.</p>
+       </div>
+   </div>
+
+   <div id="about" class="p-10 bg-no-repeat bg-cover md:p-32 " style="background-image: url('./img/bg-4.png');">
+       <div class="grid grid-cols-2 md:grid-cols-4 md:space-x-16">
+            <div class="hidden md:col-span-2 md:block">
+                <img class="object-cover " src="img/about.jpg" alt="">
+            </div>
+            <div class="col-span-2 mx-10">
+                <h3 class="text-xl font-semibold uppercase sm:text-2xl" style="color: #e47aad;">About Us</h3>
+                <h1 class="my-6 text-4xl font-semibold tracking-wide">We are Design & Development Team.</h1>
+                <p class="my-4 text-justify text-slate-600">Dolor sit amet consectetur elit sed do eiusmod tempor incididunt labore et dolore magna aliqua enim minim veniam quis nostrud exercitation ullamco laboris nisi ut aliquip .</p>
+                <p class="my-4 text-justify text-slate-600">Excepteur sint occaecat cupidatat non proident sunt in culpa qui officia deserunt mollit anim id est laborum. Sed ut perspiciatis unde omnis iste natus error sit voluptatem.</p>
+                <button class="p-4 py-3 mt-6 transition duration-500 ease-out rounded hover:bg-slate-900 hover:text-white bg-fuchsia-400" >Purchase Now</button>
+            </div>
+       </div>
+   </div>
+
+   <div class="p-10 text-center bg-no-repeat bg-cover md:px-32" style="background-image: url('./img/bg-6.jpg');">
+       <h3 class="text-xl font-semibold uppercase sm:text-2xl text-fuchsia-400">Our Projects</h3>
+       <h1 class="text-3xl font-semibold md:text-4xl">Take a Look Around Our Portfolio</h1>
+       
+       <div class="grid grid-cols-2 gap-2 p-5 lg:p-10 md:p-5 md:gap-5 md:grid-cols-3 ">
+            <div class="col-span-1 p-0 border-4 border-white border-inherit ">
+                <img src="./img/boy.jfif"     class="w-full h-32 md:h-80" alt="">
+    
+            </div>
+            <div class="col-span-1 p-0 border-4 border-white border-inherit ">
+                <img src="./img/design.jfif"  class="w-full h-32 md:h-80" alt="">
+                <div class="bg-blue-900"></div>
+            </div>
+            <div class="col-span-1 p-0 border-4 border-white border-inherit ">
+                <img src="./img/design1.jfif" class="w-full h-32 md:h-80" alt="">
+                <div class="bg-blue-900"></div>
+            </div>
+            <div class="col-span-1 p-0 border-4 border-white border-inherit ">
+                <img src="./img/sea.jfif"     class="w-full h-32 md:h-80" alt="">
+                <div class="bg-blue-900"></div>
+            </div>
+            <div class="col-span-1 p-0 border-4 border-white border-inherit ">
+                <img src="./img/boy.jfif"     class="w-full h-32 md:h-80" alt="">
+                <div class="bg-blue-900"></div>
+            </div>
+            <div class="col-span-1 p-0 border-4 border-white border-inherit ">
+                <img src="./img/design.jfif"  class="w-full h-32 md:h-80" alt="">
+                <div class="bg-blue-900"></div>
+            </div>
+            <div class="col-span-1 p-0 border-4 border-white border-inherit ">
+                <img src="./img/design1.jfif" class="w-full h-32 md:h-80" alt="">
+                <div class="bg-blue-900"></div>
+            </div>
+            <div class="col-span-1 p-0 border-4 border-white border-inherit ">
+                <img src="./img/sea.jfif"     class="w-full h-32 md:h-80" alt="">
+                <div class="bg-blue-900"></div>
+            </div>
+            <div class="hidden col-span-1 p-0 border-4 border-white md:block border-inherit ">
+                <img src="./img/design.jfif"  class="w-full h-32 md:h-80" alt="">
+                <div class="bg-blue-900"></div>
+            </div>
+       </div> 
+   </div>
+    
+   <div class="text-white grid md:grid-cols-4 sm:grid-cols-2 grid-cols-1 bg-no-repeat bg-cover py-20 px-20" style="background-image: url('./img/bg-3.jfif');">
+       <div class="col-span-1 font-bold my-3">
+            <div class="flex p-3 md:pl-10">
+                <div class="mr-3">
+                    <svg xmlns="http://www.w3.org/2000/svg" class="mt-4 h-16 w-16" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2">
+                        <path stroke-linecap="round" stroke-linejoin="round" d="M21 13.255A23.931 23.931 0 0112 15c-3.183 0-6.22-.62-9-1.745M16 6V4a2 2 0 00-2-2h-4a2 2 0 00-2 2v2m4 6h.01M5 20h14a2 2 0 002-2V8a2 2 0 00-2-2H5a2 2 0 00-2 2v10a2 2 0 002 2z" />
+                    </svg>
+                </div>
+                <div>
+                    <h1 class="text-5xl mb-3">370</h1>
+                    <p class="text-xl">Work Completed</p>
+                </div>
+            </div>
+       </div>
+       <div class="col-span-1  font-bold   my-3">
+            <div class="flex p-3">
+                <div class="mr-3">
+                    <svg xmlns="http://www.w3.org/2000/svg" class="mt-4 h-16 w-16" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2">
+                        <path stroke-linecap="round" stroke-linejoin="round" d="M9 5H7a2 2 0 00-2 2v12a2 2 0 002 2h10a2 2 0 002-2V7a2 2 0 00-2-2h-2M9 5a2 2 0 002 2h2a2 2 0 002-2M9 5a2 2 0 012-2h2a2 2 0 012 2m-3 7h3m-3 4h3m-6-4h.01M9 16h.01" />
+                    </svg>
+                </div>
+                <div>
+                    <h1 class="text-5xl mb-3">450</h1>
+                    <p class="text-xl">New Projects</p>
+                </div>
+            </div>
+       </div>
+       <div class="col-span-1  font-bold   my-3">
+            <div class="flex p-3">
+                <div class="mr-3">
+                    <svg xmlns="http://www.w3.org/2000/svg" class="mt-4 h-16 w-16" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2">
+                        <path stroke-linecap="round" stroke-linejoin="round" d="M4.318 6.318a4.5 4.5 0 000 6.364L12 20.364l7.682-7.682a4.5 4.5 0 00-6.364-6.364L12 7.636l-1.318-1.318a4.5 4.5 0 00-6.364 0z" />
+                    </svg>
+                </div>
+                <div>
+                    <h1 class="text-5xl mb-3">50k+</h1>
+                    <p class="text-xl">Happy Customers</p>
+                </div>
+            </div>
+       </div>
+       <div class="col-span-1  font-bold   my-3">
+            <div class="flex p-3">
+                <div class="mr-3">
+                    <svg xmlns="http://www.w3.org/2000/svg" class="mt-4 h-16 w-16 fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2">
+                        <path stroke-linecap="round" stroke-linejoin="round" d="M14 10h4.764a2 2 0 011.789 2.894l-3.5 7A2 2 0 0115.263 21h-4.017c-.163 0-.326-.02-.485-.06L7 20m7-10V5a2 2 0 00-2-2h-.095c-.5 0-.905.405-.905.905 0 .714-.211 1.412-.608 2.006L7 11v9m7-10h-2M7 20H5a2 2 0 01-2-2v-6a2 2 0 012-2h2.5" />
+                    </svg>
+                </div>
+                <div>
+                    <h1 class="text-5xl mb-3">50+</h1>
+                    <p class="text-xl">Awards Win</p>
+                </div>
+            </div>
+       </div>
+   </div>
+
+    <div class="md:px-28 p-12 md:flex block">
+        <div class="mx-10 p-5">
+            <h3 class="text-xl font-semibold uppercase sm:text-2xl text-fuchsia-400 my-3">Our Skill</h3>
+            <h1 class=" font-semibold text-4xl my-6 tracking-wide">We are Design & Development Team.</h1>
+            <div class="uppercase font-semibold mb-2 ">Branding
+                <div class="mb-3 w-full bg-gray-200 rounded">
+                    <div class="rounded bg-blue-600 h-3.5 font-bold text-xs text-blue-100 text-right p-0.5 leading-none rounded-l-full" style="width: 85%"> 85%</div>
+                </div>
+            </div>    
+            <div class="uppercase font-semibold ">Consulting
+                <div class="mb-3 w-full bg-gray-200 rounded">
+                <div class="rounded bg-blue-600 text-xs h-3.5 font-bold text-blue-100 text-right p-0.5 leading-none rounded-l-full " style="width: 90%;">
+                        90%
+                </div>
+                </div>
+            </div>
+            <div class="uppercase font-semibold ">Business
+                <div class="mb-3 bg-gray-200 w-full rounded">
+                    <div class="rounded bg-blue-600 h-3.5 font-bold text-xs text-blue-100 text-right p-0.5 leading-none rounded-l-full" style="width: 70%;">
+                    70%
+                    </div>
+                </div>
+            </div>
+            <div class="uppercase font-semibold ">Promotion
+                <div class="mb-3 bg-gray-200 w-full rounded">
+                <div class="rounded bg-blue-600 h-3.5 font-bold text-xs text-right p-0.5 leading-none rounded-l-full text-blue-100" style="width:90%;">
+                    90%
+                </div>
+                </div>
+            </div>
+        </div>
+        <div class="hidden md:block px-5 pt-0">
+            <div><img class="w-54 " src="./img/pattern-skill.jpg" alt=""></div>
+            <div><img class="w-54 " style="margin-left: 80px; margin-top: -200px;" src="./img/skill.jpg" alt=""></div>
+        </div>
+   </div>
+
+    <div class="p-10 bg-no-repeat md:px-32 h-80 bg-cover" style=" background-image: url('./img/bg-6.jpg');">
+        <div class="">
+            <div class="text-center">
+                <h3 class="text-xl font-semibold uppercase sm:text-2xl text-fuchsia-400 my-2">Testimonials</h3>
+                <h1 class="font-semibold text-5xl my-6 tracking-wide">Our Clients Say</h1>
+            </div>   
+            <div class="grid grid-cols-3  gap-4">
+                <div class="col-span-1 text-center bg-white rounded p-6 shadow-lg" style="border-bottom: 4px solid #e47aad;">
+                    <img src="./img/cutomer.jpg" class="rounded-full" alt="">
+                    <p class="my-7 justify-center text-slate-500">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Assumenda quo molestiae commodi autem placeat nam, vel dolore veniam quis.</p>
+                    <p class="font-bold text-xl">Liam Hughes</p>
+                    <p class="text-fuchsia-400">Manager</p>
+                </div>
+                <div class="col-span-1 text-center bg-white rounded p-6 shadow-lg" style="border-bottom: 4px solid #e47aad;">
+                    <img src="./img/customer1.jpg" class="rounded-full" alt="">
+                    <p class="my-7 justify-center text-slate-500">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Assumenda quo molestiae commodi autem placeat nam, vel dolore veniam quis.</p>
+                    <p class="font-bold text-xl">Liam Hughes</p>
+                    <p class="text-fuchsia-400">Manager</p>
+
+                </div>
+                <div class="col-span-1 text-center bg-white rounded p-6 shadow-lg " style="border-bottom: 4px solid #e47aad;" >
+                    <img src="./img/customer2.jpg" class="rounded-full" alt="">
+                    <p class="my-7 justify-center text-slate-500">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Assumenda quo molestiae commodi autem placeat nam, vel dolore veniam quis.</p>
+                    <p class="font-bold text-xl">Liam Hughes</p>
+                    <p class="text-fuchsia-400">Manager</p>
+
+                </div>
+                <!-- <div  class="col-span-1  text-center bg-white rounded p-6 shadow-lg " style="border-bottom: 4px solid #e47aad;">
+                    <img src="./img/cutomer.jpg" class="rounded-full" alt="">
+                    <p class="my-7 justify-center text-slate-500">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Assumenda quo molestiae commodi autem placeat nam, vel dolore veniam quis.</p>
+                    <p class="font-bold text-xl">Liam Hughes</p>
+                    <p class="text-fuchsia-400">Manager</p>
+
+                </div>
+                <div class="col-span-1 text-center bg-white rounded p-6 shadow-lg" style="border-bottom: 4px solid #e47aad;" >
+                    <img src="./img/customer1.jpg" class="rounded-full" alt="">
+                    <p class="my-7 justify-center text-slate-500">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Assumenda quo molestiae commodi autem placeat nam, vel dolore veniam quis.</p>
+                    <p class="font-bold text-xl">Liam Hughes</p>
+                    <p class="text-fuchsia-400">Manager</p>
+
+                </div>
+                <div class="col-span-1 text-center bg-white rounded p-6 shadow-lg " style="border-bottom: 4px solid #e47aad;" >
+                    <img src="./img/customer2.jpg" class="rounded-full" alt="">
+                    <p class="my-7 justify-center text-slate-500">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Assumenda quo molestiae commodi autem placeat nam, vel dolore veniam quis.</p>
+                    <p class="font-bold text-xl">Liam Hughes</p>
+                    <p class="text-fuchsia-400">Manager</p>
+
+                </div> -->
+            </div>
+        </div>
+    </div>
+    <div style="height: 320px; background-image: url('./img/bg-4.png'); "></div>
+
+    <div class="" style="padding: 60px; background: url('./img/bg-3.jfif');">
+        <div class="grid grid-cols-5 space-x-4" >
+            <div class="col-span-1">
+                <img src="./img/logo.png"  alt="">
+            </div>    
+            <div class="col-span-1">
+                <img src="./img/logo1.png" alt="">
+            </div>    
+            <div class="col-span-1">
+                <img src="./img/logo2.png" alt="">
+            </div>    
+            <div class="col-span-1">
+                <img src="./img/logo3.png" alt="">
+            </div>    
+            <div class="col-span-1">
+                <img src="./img/logo4.png" alt="">
+            </div>    
+        </div>
+    </div>
+    
+   
+
+   <div class="grid md:grid-cols-4 grid-cols-2 ">
+       <img src="./img/team-1.jpg" alt="">
+       <img src="./img/team-2.jpg" alt="">
+       <img src="./img/team-3.jpg" alt="">
+       <img src="./img/team-4.jpg" alt="">
+   </div>
+
+    <div id="blog" class="md:p-32" style="padding: 50px;">
+        <div class="text-center">
+            <h3 class="text-xl font-semibold uppercase sm:text-2xl text-fuchsia-400 ">Latest Article</h3>
+            <h1 class="font-semibold text-4xl  tracking-wide py-5">Stay Update with dizer.</h1>
+        </div>
+        <div class="grid lg:grid-cols-3 md:grid-cols-2 grid-col-1 gap-4 items-center justify-center">
+            <div class="col-span-1 shadow-inner space-y-3 mb-4">
+                <img src="./img/blog-1.jpg" alt="">
+                <h1 class="font-bold text-2xl ">Premium Jekyll And Ghost Themes</h1>
+                <p  class="text-fuchsia-400 " >BY THEMEFISHER / 02 JANUARY 2020</p>
+                <p  class="text-gray-500 "    >11 time-saving pro tips for web designers working in Webflow11 time-saving pro tips for web designers working in Webflow Consectetuer...</p>
+            </div>
+            <div class="col-span-1 shadow-inner space-y-3 mb-4">
+                <img src="./img/blog-2.jpg" alt="">
+                <h1 class="font-bold text-2xl">Premium Jekyll And Ghost Themes</h1>
+                <p class="text-fuchsia-400" >BY THEMEFISHER / 02 JANUARY 2020</p>
+                <p class="text-gray-500 "    >11 time-saving pro tips for web designers working in Webflow11 time-saving pro tips for web designers working in Webflow Consectetuer...</p>
+            </div>
+            <div class="col-span-1 shadow-inner space-y-3 mb-4">
+                <img src="./img/blog-3.jpg" alt="">
+                <h1 class="font-bold text-2xl ">Premium Jekyll And Ghost Themes</h1>
+                <p class="text-fuchsia-400" >BY THEMEFISHER / 02 JANUARY 2020</p>
+                <p class="text-gray-500 "    >11 time-saving pro tips for web designers working in Webflow11 time-saving pro tips for web designers working in Webflow Consectetuer...</p>
+            </div>
+        </div>
+    </div>
+   
+   <div  style="padding: 96px; padding-bottom: 0; background-color: #1f1f40;">
+        <div class="grid md:grid-cols-4 sm:grid-cols-2 gap-4" style="border-bottom: 1px solid #808080 ; padding-bottom: 40px;">
+            <div class="space-y-3 col-span-1" >
+                <h1 class="font-bold text-white text-3xl py-3">About Dizer.</h1>
+                <p class="text-gray-500 font-semibold text-left">Lorem ipsum dolor sit amet consectetur adipisicing elit. Accusantium inventore facilis maxime? </p>
+                <em class="fa fa-facebook hover:bg-red-300 border font-semibold border-gray-500 hover:text-white rounded-full p-2 text-gray-600" style="margin: 10px 5px 12px; padding: 10px;"></em>
+                <em class="fa fa-twitter  hover:bg-red-300 border font-semibold border-gray-500 hover:text-white rounded-full p-2 text-gray-600" style="margin: 10px 5px 12px; padding: 10px;"></em>
+                <em class="fa fa-youtube  hover:bg-red-300 border font-semibold border-gray-500 hover:text-white rounded-full p-2 text-gray-600" style="margin: 10px 5px 12px; padding: 10px;"></em>
+                <em class="fa fa-linkedin hover:bg-red-300 border font-semibold border-gray-500 hover:text-white rounded-full p-2 text-gray-600" style="margin: 10px 5px 12px; padding: 10px;"></em>
+            </div>
+            <div class="space-y-2 col-span-1">
+                <h1 class="font-bold text-white text-3xl py-3">Navigation</h1>
+                <a href="" class="block w-32 text-gray-500 font-semibold hover:text-white">About Us</a>
+                <a href="" class="block w-32 text-gray-500 font-semibold hover:text-white">Services</a>
+                <a href="" class="block w-32 text-gray-500 font-semibold hover:text-white">Projects</a>
+                <a href="" class="block w-32 text-gray-500 font-semibold hover:text-white">Company News</a>
+                <a href="" class="block w-32 text-gray-500 font-semibold hover:text-white">Conatct Us</a>
+            </div>
+            <div class="space-y-2 col-span-1">
+                <h1 class="font-bold text-white text-3xl py-3">Services</h1>
+                <a href="" class="block w-32 text-gray-500 font-semibold hover:text-white">Brand Design</a>
+                <a href="" class="block w-32 text-gray-500 font-semibold hover:text-white">Seo & Marketing</a>
+                <a href="" class="block w-32 text-gray-500 font-semibold hover:text-white">Creative Design</a>
+                <a href="" class="block w-32 text-gray-500 font-semibold hover:text-white">Photography</a>
+                <a href="" class="block w-32 text-gray-500 font-semibold hover:text-white">Print Design</a>
+            </div>
+            <div class="space-y-2 col-span-1">
+                <h1 class="font-bold text-white text-3xl py-3">Contact Info</h1>
+                <p class="text-gray-500 font-semibold" style="padding-bottom: 12px;">9567 Turner Trace Apt. 466 North Willie, BC C3G8A4</p>
+                <p class="block w-32 text-gray-500 font-semibold hover:text-white"><a href="">+21 123 456 5523</a></p>
+                <p class="block w-32 text-gray-500 font-semibold hover:text-white"><a href="">Hello@Dizer.Com</a></p>
+            </div>
+        </div>
+
+        <div class="grid md:grid-cols-3 grid-cols-1 text-center text-gray-500 p-10 space-y-3">
+            <p class="col-span-1">dizer. &copy; 2020 All Right Preserved</p>
+            <a href="" class="col-span-1 text-5xl font-bold tracking-wide text-white hover:text-red-300">dizer <span style="color: #e47aad;">.</span></a>
+            <p class="col-span-1">Terms of Service | Privacy Policy</p>
+        </div>
+   </div>
+
+   <script src="./portfolio.js"></script>
+</body>
+</html>
+
+

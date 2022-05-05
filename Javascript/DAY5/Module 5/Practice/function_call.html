@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <h1>Function Call</h1>
+    <p id="name"></p>
+    <script type="text/javascript">
+        const student = {
+            name: function(){
+                return this.fname + " " + this.lname;
+            }
+        }
+        const student1 = {
+            fname: "Inkal",
+            lname: "Panchal"
+        }
+        const student2 = {
+            fname: "Neha",
+            lname: "Bhatt"
+        }
+
+        document.getElementById("name").innerHTML = student.name.call(student1);
+    </script>
+</body>
+</html>

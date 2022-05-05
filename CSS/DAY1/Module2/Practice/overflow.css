@@ -1,0 +1,36 @@
+div.visible{
+    position: static;
+    background-color: #f0f;
+    width: 200px;
+    height: 100px;
+    border: 1px dashed black;
+    overflow: visible;
+    margin-bottom: 90px;
+}
+
+div.hidden{
+    top: 100px;
+    position: relative;
+    background-color: #fff00f;
+    overflow: hidden;
+    width: 200px;
+    height: 150px;
+}
+
+div.scroll{
+    top: 150px;
+    position: relative;
+    background-color: #ccc;
+    overflow: scroll;
+    height: 100px;
+    width: 300px;
+}
+
+div.auto{
+    top: 200px;
+    overflow: auto;
+    position: relative;
+    width: 200px;
+    height: 150px;
+    background-color: #453;
+}

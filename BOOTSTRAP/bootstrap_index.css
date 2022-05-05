@@ -1,0 +1,42 @@
+body {
+    margin: 0;
+}
+
+.fullBody {
+    height: 100vh;
+    display: grid;
+    grid-template-columns:1fr 5fr ;
+    grid-template-rows: 0.2fr auto;
+    grid-template-areas: 
+    "navbar navbar "
+    "sidebar main "
+    ;
+    padding: 0;
+    margin: 0 ;
+
+}
+#navbar {
+    grid-area: navbar;
+    background-color: #2C3333;
+    padding: 30px 20px;
+    text-align: right;
+}
+#navbar a {
+    font-size: large;
+    text-decoration: none;
+    font-weight: 700;
+}
+#main {
+    grid-area: main;
+    font-size: xx-large;
+    font-weight: 600;
+    background-color: powderblue;
+}
+#sidebar {
+    grid-area: sidebar;
+    background-color: peachpuff;
+}
+
+li.day {
+    font-weight: 600;
+}

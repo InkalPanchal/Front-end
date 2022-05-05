@@ -1,0 +1,22 @@
+body{
+    margin: 0;
+}
+.menu {
+    background-color: black;
+    padding: 25px 0;
+}
+
+.menu a{
+    padding: 25px 10px 26px;
+    text-decoration: none;
+    color: white;
+}
+
+.menu a:hover{
+    background-color: grey;
+    color: black;
+}
+.menu a.active{
+    background-color: dodgerblue;
+    color: white;
+}

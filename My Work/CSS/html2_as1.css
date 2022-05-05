@@ -1,0 +1,149 @@
+
+body{
+  font-family: Avenir, Helvetica, Arial, sans-serif;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+}
+h2{
+  color:#01012be8;
+}
+h3{
+  color: rgb(20, 94, 104);
+}
+img{
+  border-radius: 70%;
+  float: left;
+  margin-right: 20px;
+}
+.title{
+ margin: 20px 0 ;
+}
+.title h1{
+  margin-bottom: 5px;
+  font-size: xx-large;
+}
+.contact{
+  text-align: center;
+}
+.alignment li{
+  display: inline;
+  padding:10px;
+  color: white;
+  text-decoration: none;
+}
+.alignment{
+  padding-left: 0;
+}
+li:hover{
+  color:black;
+}
+nav{
+  text-align: center;
+  background-color: grey;
+  padding: 5px;
+  height: 40px;
+}
+
+.education h3{
+  margin: 10px 0;
+}
+.edu{
+  padding-left: 25px;
+}
+h4{
+  margin: 10px 0;
+}
+.grade{
+  margin: 0;
+}
+
+small{
+  color: darkgrey;
+}
+em{
+  color: grey;
+}
+.course{
+  float: left;
+  margin: 0 5px;
+  font-size: 15px;
+}
+.skills .skill{
+  padding-left: 25px;
+}
+.skills h4{
+  text-align: center;
+  padding: 5px 0;
+  border: solid grey 1px;
+  border-radius: 10px ;
+  width: 150px;
+  height:30px;
+  font-size: small;
+  color: rgb(247, 243, 243);
+  background-color: grey;
+}
+
+.skill{
+  float: left;
+  margin: 0 5px;
+}
+.projects{
+  margin-top: 210px;
+}
+.projects h4{
+  color: rgb(20, 94, 104);
+  margin-bottom: 2px;
+}
+.projects ul{
+  margin-top: 1px;
+  font-size: 15px;
+  color: rgb(15, 15, 15);
+}
+
+.certificates h4{
+  color: rgb(20, 94, 104) ;
+  margin-bottom: 0;
+}
+.certificates small{
+  margin-top: 0;
+  font-style: italic;
+  font-size: 13px;
+}
+
+.personal h4{
+  padding-left: 25px;
+  color: rgb(19, 18, 18);
+  font-weight:600;
+}
+
+.languages h4,p{
+  padding-left: 25px;
+  color: rgb(19, 18, 18);
+}
+
+.language,p{
+  font-size: small;
+  color: grey;
+  
+}
+
+.interests h4{
+  color: rgb(41, 39, 39);
+  font-weight:600;
+  border: solid grey 1px;
+  border-radius: 13px;
+  width: 100px;
+  height: 28px;
+  margin-left: 25px;
+  text-align: center;
+  font-size: small;
+}
+
+.interest {
+  float: left;
+  margin: 0 4px;
+}
+
+hr{
+  border: 1px solid grey;
+}

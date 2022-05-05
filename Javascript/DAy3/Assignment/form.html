@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+    <link rel="stylesheet" href = "../../../node_modules/bootstrap/dist/css/bootstrap.min.css">
+    <title>Form</title>
+  </head>
+  <body>
+<div class="container my-5">
+
+    <form id="form" action="" method="get">
+      <fieldset class="form">
+        <legend>Employee Details:</legend>
+      
+        <div>
+          <label for="name">Employee Name: </label><br>
+          <input type="text" name="name"  id="name" placeholder="Inkal Panchal" required>
+        </div>
+
+        <div>
+          <label for="e_id">Employee Id</label><br>
+          <input type="number" placeholder="12345"  id="e_id" name="e_id" required>
+        </div>
+        
+        
+        <div>
+          <label for="age">Age: </label><br>
+          <input type="number" name="age" id="age"  min="18" max="40" placeholder="21" required>
+        </div>
+        <br>
+
+        <div>
+          <label for="Gender">Gender: </label><br>
+          <input type="radio" name="gender" id="female" value="Female" required> Female
+          <br>
+          <input type="radio" name="gender" id="male" value="male" required> Male
+          <br>
+          <input type="radio" name="gender" id="other" required> Other
+        </div>
+        <hr>
+      
+        
+        <fieldset class="job">
+          <legend>Job details</legend>
+          <div>
+            <label for="designation">Designation: </label>
+            <select name="designation" id="designation" required>
+              <option value="select">Select Designation</option>
+              <option value="Fresher">Fresher</option>
+              <option value="Trainer">Trainer</option>
+              <option value="Manager">Manager</option>
+              <option value="assistantmanager">Assistant Manager</option>
+              <option value="Employee">Employee</option>
+            </select>
+          </div>
+  
+          <br>
+          <div>
+            <label for="salary">Salary</label>
+            <input type="number" name="salary" placeholder="25,000/-"  min="20000" max="35000">
+            <input type="range" name="salary" id="salary" min="20000" max="50000">
+          </div>
+          <br>
+  
+          <div>
+            <label for="location">Location</label>
+            <select id="location" required>
+              <option value="location">location..</option>
+              <option value="Ahmedabad">Ahmedabad</option>
+              <option value="Baroda">Baroda</option>
+              <option value="Surat">Surat</option>  
+            </select>
+          </div>
+            <br>
+
+            <div>
+              <label for="date">Date of Joining:</label>
+              <input type="date" name="date" id="date" required>
+            </div>
+        </fieldset>
+
+        
+          <hr>
+          <fieldset class="contact">
+            <legend>Contact Details:</legend>
+            
+            <div>
+            <p id="mailErr"></p>
+              <label for="email">Email-Id:</label><br>
+              <input type="email" name="email" id="email"  placeholder="abc@gmail.com" required>
+            </div>
+            
+
+          <div>
+            <p id="demo1"></p>
+            <label for="contact">Contact Number:</label><br>
+            <input type="tel" name="contact" id="contact"  placeholder="1234567890"   required>
+          </div>
+          </fieldset>
+        
+          <br>
+          
+          <input type="submit" id="submit" value="Submit">
+      </fieldset>
+    </form>
+
+    <div id="err" style="color: red;"></div>
+  </div>
+
+  <script src="./form.js"></script>
+  </body>
+</html>

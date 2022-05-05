@@ -1,0 +1,152 @@
+<!-- Assignment
+Design a form for storing employee details. (Employee name, age, Gender, designation, salary, location, Email ID, Date of Joining and contact number) -->
+
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Form</title>
+    <link rel="stylesheet" href="../CSS/style.css">
+    <link rel="stylesheet" href="../CSS/html_as1.css">
+    
+  </head>
+  <body>
+    <div class="container">
+      <nav class="navbar" aria-label="navbar">
+        <a href="../../index.html" class="">Home</a>
+        <a href="./HTML.html">HTML</a>
+        <a href="./CSS.html">CSS</a>
+        <a href="../../BOOTSTRAP/bootstrap_index.html">BOOTSTRAP</a>
+        <a href="../../Javascript/javascriptIndex.html">JAVASCRIPT</a>
+        <a href="../../JQuery/jQueryIndex.html">jQuery</a>
+    <a href="../../TailWind/tailwindindex.html">TAILWIND</a>
+
+        </nav>
+      <main>
+        <form action="/action_page.php" autocomplete="on">
+          <fieldset class="form">
+            <legend>Employee Details:</legend>
+            <label for="name">Employee Name: </label><br>
+            <input type="text" name="name" id="name" placeholder="Inkal Panchal" required>
+            <br>
+            
+            <label for="age">Age: </label><br>
+            <input type="number" name="age" id="age" min="18" max="40" placeholder="21" required>
+            <br>
+            <label for="Gender">Gender: </label>
+            <input type="radio" name="female" id="female" value="Female"> Female
+            <input type="radio" name="male" id="male" value="male"> Male
+            <input type="radio" name="other" id="other"> Other
+            <br><br>
+            <hr>
+            <br>
+            
+            <fieldset class="job">
+              <legend>Job details</legend>
+              <label for="designation">Designation: </label>
+              <select name="designation" id="designation">
+                <option value="select">Select Designation</option>
+                <option value="Fresher">Fresher</option>
+                <option value="Trainer">Trainer</option>
+                <option value="Manager">Manager</option>
+                <option value="assistantmanager">Assistant Manager</option>
+                <option value="Employee">Employee</option>
+              </select>
+      
+              <br>
+              <label for="salary">Salary</label>
+              <input type="number" name="salary" placeholder="25,000/-" min="20000" max="35000">
+              <input type="range" name="salary" id="salary" min="20000" max="50000">
+              <br>
+      
+              <label for="location">Location</label>
+              <select id="location">
+                <option value="location">location..</option>
+                <option value="Ahmedabad">Ahmedabad</option>
+                <option value="Baroda">Baroda</option>
+                <option value="Surat">Surat</option>  
+                </select>
+                <br>
+                <label for="date">Date of Joining:</label>
+                <input type="date" name="date" id="date">
+            </fieldset>
+    
+              <br>
+              <br>
+              <hr>
+              <fieldset class="contact">
+                <legend>Contact Details:</legend>
+                <label for="email">Email-Id:</label><br>
+              <input type="email" name="email" id="email" placeholder="abc@gmail.com" required><br>
+    
+              <label for="contact">Contact Number:</label><br>
+              <input type="tel" name="contact" id="contact" placeholder="+91-1234567890"  pattern="+91-[0-9]{10}" required>
+              </fieldset>
+              
+    
+              <br>
+              
+              <input type="submit" value="Submit">
+    
+    
+    
+          </fieldset>
+            
+    
+        </form>
+      </main>    
+      <div class="sidebar">
+        <ul style="list-style-type: none;">
+            <li>DAY1
+                <ul>
+                    <li>Module 1
+                      <ul style="list-style-type: disc;">
+                        <li>Assignment
+                          <ul>
+                            <li><a href="html_as1.html">Assignment 1</a></li>
+                          </ul>
+                        </li>
+                        <li>Practice
+                          <ul>
+                            <li><a href="./html_exe1.html">Exercise1</a></li>
+                            <li><a href="./html_exe2.html">Exercise2</a></li>
+                            <li><a href="./html_exe3.html">Exercise3</a></li>
+                            <li><a href="./html_exe4.html">Exercise4</a></li>
+                            <li><a href="./html_exe5.html">Exercise5</a></li>
+                            <li><a href="./html_exe6.html">Exercise6</a></li>
+                            <li><a href="./html_exe7.html">Exercise7</a></li>
+                            <li><a href="./html_exe8.html">Exercise8</a></li>
+                          </ul>
+                        </li>
+                      </ul>
+                    </li>
+                </ul>
+            </li>
+            <li>DAY2
+              <ul>
+                <li>Module 2
+                  <ul style="list-style-type: disc;">
+                    <li>Assignment
+                      <ul>
+                        <li><a href="./html2_as1.html">Resume</a></li>
+                      </ul>
+                    </li>
+                    <li>Practice
+                      <ul>
+                        <li><a href="./html2_exe1.html">Exercise 1</a></li>
+                      </ul>
+                    </li>
+                  </ul>
+                </li>
+              </ul>
+            </li>
+        </ul>
+      </div>
+    </div>
+
+     
+    
+  </body>
+</html>

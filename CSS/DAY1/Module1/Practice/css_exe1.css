@@ -1,0 +1,16 @@
+body{
+    background-color: powderblue;
+}
+
+.para{
+    border: 1px solid black;
+}
+
+li{
+    display: inline;
+    padding: 0 10px;
+}
+
+div{
+    color: blue;
+}

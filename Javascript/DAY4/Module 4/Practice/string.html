@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <h1>Javascript Promise</h1>
+
+    <p id="result"></p>
+    
+    <script>
+    
+    function display(data){
+        document.getElementById("result").innerHTML = data;
+    }
+
+    function test() {
+        return new Promise(function(resolve, reject) {
+            let str = prompt("Enter string: ");
+            var temp = typeof(str);
+            // document.write(temp);
+
+            if(temp == "string"){
+                setTimeout(
+                function() {
+                    var splitStr = str.split("");
+                    var rev = splitStr.reverse();
+                    var joins = rev.join("");                            
+                resolve("<h4>Reverse string:</h4> "+joins);
+                } ,500);
+            } else {
+                reject("You enterd wrong input!");
+            }
+        });
+    }
+
+    test().then (
+        function(value) {
+            display(value);
+        },
+        function(error) {
+            display(error);
+        }
+    );
+
+    </script>
+</body>
+</html>

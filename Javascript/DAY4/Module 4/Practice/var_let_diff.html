@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <h1>var and let difference</h1>
+    <p id="demo"></p>
+    <p id="local"></p>
+    <p id="global"></p>
+    <p id="inside"></p>
+    <p id="local1"></p>
+    <p id="global1"></p>
+
+    <script type="text/javascript">
+        document.getElementById("demo").innerHTML = "Outside the function values of a & b:"
+        let a = 10;
+        document.getElementById("local").innerHTML = "a = "+a;
+        var b = 20;
+        document.getElementById("global").innerHTML = "b = "+b;
+
+        {
+            document.getElementById("inside").innerHTML = "Inside function changes values of a & b:"
+            let a = 5;
+            //document.getElementById("local1").innerHTML = a;
+            var b = 3;
+            //document.getElementById("global1").innerHTML = b;
+        }
+
+        document.getElementById("local1").innerHTML = "a = "+a+" Value of a not changed"; //a = 10
+        document.getElementById("global1").innerHTML = "b = " +b + " Value of b changed"; //b = 3
+    </script>
+</body>
+</html>

@@ -1,0 +1,54 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <title>Tailwind</title>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+    <link rel="stylesheet" href="../../../dist/css/styles.css">
+
+    
+  </head>
+  <body>
+    <h1 class="font-bold text-3xl mb-2">Spacing</h1>
+      <div class="flex flex-col space-y-4 ">
+        space-x-4 
+       <div class="flex space-x-4 text-center">
+        
+           <div class="rounded bg-purple-400 w-16 h-16">1</div>
+           <div class="rounded bg-purple-400 w-16 h-16">2</div>
+           <div class="rounded bg-purple-400 w-16 h-16">3</div>
+       </div><br>
+    space-y-4
+        <div class="rounded bg-purple-400 w-16 h-16">1</div>
+        <div class="rounded bg-purple-400 w-16 h-16">2</div>
+        <div class="rounded bg-purple-400 w-16 h-16">3</div>
+    </div>
+  
+    <div class="flex mt-4  flex-row-reverse space-x-4 space-x-reverse">
+        <div class="rounded bg-purple-400 w-16 h-16">1</div>
+        <div class="rounded bg-purple-400 w-16 h-16">2</div>
+        <div class="rounded bg-purple-400 w-16 h-16">3</div>
+    </div>
+    
+    -space-x-4 
+    <div class="flex mt-4 -space-x-4 ">
+        
+        <div class="rounded border-black border-2 bg-purple-400 w-16 h-16">1</div>
+        <div class="rounded border-black border-2 bg-purple-400 w-16 h-16">2</div>
+        <div class="rounded border-black border-2 bg-purple-400 w-16 h-16">3</div>
+    </div>
+
+    space-x-2 md:space-x-8
+    <div class="flex space-x-2 md:space-x-8">
+        <div class="border-2 border-black rounded bg-purple-400 w-24 h-16">breakpoint</div>
+        <div class="border-2 border-black rounded bg-purple-400 w-24 h-16">breakpoint</div>
+      </div>
+      space-x-2 hover:space-x-8
+      <div class="flex space-x-2 hover:space-x-8 w-128">
+        <div class="border-2 border-black rounded bg-purple-400 w-24 h-16">hover it!</div>
+        <div class="border-2 border-black rounded bg-purple-400 w-24 h-16">hover it!</div>
+      </div>
+  </body>
+</html>

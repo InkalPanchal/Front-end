@@ -1,0 +1,71 @@
+.hello{
+    border: 2px solid blue;
+}
+
+.para{
+    background-color: peachpuff;
+    border: 1px solid black;
+    padding: 20px;
+}
+.para1{
+    background-color: pink;
+    border:2px solid black;
+    padding: 25px;
+}
+.para2{
+    background-color: grey;
+    border: 1px solid black;
+    padding: 20px;
+}
+@media only screen and (max-width:500px){
+    .hello{
+        border: 1px solid red;
+    }
+}
+
+@media only screen and (min-width:800px){
+    .hello{
+        border: 5px solid brown;
+    }
+}
+
+@media only screen and (max-width:550px) {
+    .para{
+        background-color: powderblue;
+    }
+    .para1{
+        display: none;
+    }
+    .para2{
+        font-size: 30px;
+    }
+}
+@media only screen and (min-width:550px){
+    .para{
+        background-color: green;
+    }
+    .para2{
+        font-size: 50px;
+    }
+}
+@media only screen and (min-width:768px){
+    .para{
+        background-color: blueviolet;
+    }
+    .para2{
+        font-size: 70px;
+    }
+}
+@media only screen and (min-width:992px){
+    .para{
+        background-color: orange;
+    }
+    .para2{
+        font-size: 90px;
+    }
+}
+@media only screen and (min-width:1200px){
+    .para{
+    background-color: peachpuff;
+    }
+}

@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Module3 JS Practice</title>
+
+    
+
+</head>
+<body>
+    
+    <h1>JavaScript Validation</h1>
+    <form action="" name="frm1" onsubmit="validate();">
+        <label for="name">First Name</label>
+        <input type="text" name="fname" value="Inkal"><br>
+        <label for="name">Last Name</label>
+        <input type="text" name="lname" value="Panchal"><br>
+        <input type="submit" id="submit">
+    </form>
+    <h1>Get the values of forms</h1>
+    <p>Values of above form:</p>
+    <p id="demo"></p>
+
+    <script>
+       
+        const x = document.forms["frm1"];
+        let text = " ";
+        for (let i = 0; i < x.length; i++ ){
+            text += x.elements[i].value +  "<br>";
+        }
+
+        document.getElementById("demo").innerHTML = text;
+       
+        function validate(){
+        let x = document.forms["frm1"]["fname"].value;
+        if (x == ""){
+            alert("Fill the form!");
+            return false;
+        }
+        }
+
+    </script>
+</body>
+</html>

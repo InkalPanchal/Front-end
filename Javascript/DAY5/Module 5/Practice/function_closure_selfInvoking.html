@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Function Closure</title>
+</head>
+<body>
+    <h1>Javascript Function Closure</h1>
+    <button type="button" onclick="myfunction();">Counter</button>
+    <p id="demo"></p>
+
+
+    <script type="text/javascript">
+        const add = (function (){
+            let counter = 0; 
+            return function count(){
+                //let counter = 0; 
+                counter += 1; 
+                return counter;}
+        }) ();
+        function myfunction(){
+            document.getElementById("demo").innerHTML = add();
+        }
+    </script>
+</body>
+</html>

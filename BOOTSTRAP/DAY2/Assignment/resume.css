@@ -1,0 +1,109 @@
+/* -------------------title-------------------  */
+.my-img{
+    width: 150px;
+    height: 150px;
+}
+
+@media (max-width:768px){
+    .img-info{
+      justify-content: center;
+      text-align: center;
+    }
+    .my-info p{
+        text-align: justify;
+    }
+}
+@media (min-width:767px){
+    .my-info{
+        text-align: justify;
+    }
+}
+
+/* ---------------------contact-------------------- */
+@media (max-width:767px){
+    .email, .addr{
+       margin-bottom: 10px ;
+   }
+}
+
+/* ----------education------------ */
+@media (max-width:578px){
+    .edu{
+        text-align: center;
+    }
+    #education ul{
+        list-style-type: none;
+    }
+}
+
+
+
+@media (max-width:578px){
+    /* --------------------skills------------------------ */
+    .skill{
+        text-align: center;
+    }
+    /* -----------projects------------------- */
+    #project h2, #project h3{
+        text-align: center;
+    }
+    /* ------------personal-info------------------- */
+    #personal-info h2{
+        text-align: center;
+    }
+    /* ------------certificate------------ */
+    .certificate{
+        text-align: center;
+    }
+    /* ------------interest-------------- */
+    h2.interest{
+        text-align: center;
+    }
+}
+.interest h5{
+    padding: 4px;
+}
+
+/* @media (max-width:578px){
+    .sidebar{
+        padding: 0;
+        width: 100%;
+        height: 50px;
+    }
+    .sidebar .container{
+        display: flex;
+    }
+    .sidebar a{
+        padding: 0 5px;
+        margin-left: auto;
+    }
+    .main-content{
+        left: 0;
+    }
+} */
+
+
+ 
+
+ .fullbody{
+     display: flex;
+     flex-direction: row;
+     flex-wrap: wrap;
+ }
+ .sidebar{
+    padding: 200px 50px;
+    position: fixed;
+    height: 100%;
+}
+.sidebar a{
+    display: block;
+    text-decoration: none;
+    text-align: center;
+    margin-top: 5px;
+    color: white;
+}
+.main-content{
+    margin: auto;
+    position: absolute; 
+    left: 230px;
+}

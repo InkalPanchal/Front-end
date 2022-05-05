@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>JS Practice</title>
+
+    <script type="text/javascript">
+        function validate(){
+            var value =document.getElementById('input1').value;
+            if(isNaN(value)){
+                modifier = "not";
+            }
+            else{
+                modifier="";
+            }
+            var result = "You entered " +value+ "; This is " +modifier+" a valid number";
+            alert(result);  
+        }
+    </script>
+</head>
+<body>
+    <h1>Validation of user entry</h1>
+    <form action="" name="calculator">
+        <input type="text" name="" id="input1"><br>
+        <button type="button" onclick="validate();">Click me to see validate entry!!</button>
+    </form>
+
+    
+</body>
+</html>

@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Exercise2 JS module4</title>
+</head>
+<body>
+
+    <script type="text/javascript">
+
+        var element = document.createElement("input");
+        document.body.appendChild(element);
+        var element1 = document.createElement("div");
+        document.body.appendChild(element1)
+        var button = document.createElement("button");
+        var text1 = document.createTextNode("Submit");
+        button.appendChild(text1);
+        document.body.appendChild(button);
+
+        function display(some){
+        document.getElementById("demo").innerHTML = some;
+    }
+
+        var string = element.value;
+        function exe1(res) {
+            return new Promise(function(resolve, reject){
+
+                button.addEventListener('click', (string)=>{
+                var pattern = /\w+/g;
+                var res = pattern.test(string);
+            
+                element1.innerText = "True or false: "+res;
+        
+        }); 
+      
+               if (res == "true") {
+                    resolve("ok")
+                }
+                else {
+                    reject("error")
+                        
+                }
+            })
+        }
+
+        exe1().then (
+        function(value) {
+            display(value);
+        },
+        function(error) {
+            display(error);
+        }
+    );
+    </script>
+</body>
+</html>

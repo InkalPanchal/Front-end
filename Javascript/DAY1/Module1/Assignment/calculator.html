@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Assignment</title>
+</head>
+<body>
+    <form action="">
+        <label for="first">Please enter first number</label>
+        <input type="number" name="first" id="first"><br>
+
+        <label for="second">Please enter second number</label>
+        <input type="number" name="second" id="second"><br>
+        
+        <label for="select">Please select operation you want to perform:</label><br>
+        <input type="radio" name="operation" id="addition" value="addition">Addition <br>
+        <input type="radio" name="operation" id="subtraction" value="subtration">Subtraction <br>
+        <input type="radio" name="operation" id="multiplication" value="multiplication">Multiplication <br>
+        <input type="radio" name="operation" id="division" value="division">Division <br>
+        <br>
+        <input type="button" id="calculator" value="Calculate" onclick="myFunction();">
+        <input type="reset" value="Reset" onclick="location.reload();">
+
+    </form>
+
+    <p id="res"></p>
+    
+
+    <script>
+        
+        function myFunction(x , y){
+            var x = parseInt(document.getElementById('first').value);
+            var y = parseInt(document.getElementById('second').value);
+
+            if(document.getElementById('addition').checked){
+                var a ;
+                a = x + y;
+                document.getElementById('res').innerHTML = "Addition of " +x+ "&" + y + " is " + a;
+            }
+            else if (document.getElementById('subtraction').checked){
+                var s ;
+                s = x - y;
+                document.getElementById('res').innerHTML = "Subtraction of " +x+ "&" + y + " is " + s;
+
+            }
+            else if(document.getElementById('multiplication').checked){
+                var m;
+                m = x * y;
+                document.getElementById('res').innerHTML = "Multiplication of " +x+ "&" + y + " is " + m;
+
+            }
+            else if(document.getElementById('division').checked){
+                var d;
+                d = x / y;
+                document.getElementById('res').innerHTML = "Division of " +x+ "&" + y + " is " + d;
+            }
+
+            // switch(){
+            //     case a:
+            //         document.write(x + y);
+
+            //     case s:
+            //         document.write(x - y);
+                
+            //     case m:
+            //         document.write(x * y);
+
+            //     case d:
+            //         document.write(x / y);
+
+            //     default:
+            //         alert("Invalid entry!");
+            // }
+        }
+    </script>
+</body>
+</html>

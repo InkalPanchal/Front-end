@@ -1,0 +1,171 @@
+<!doctype html>
+<html lang="en">
+  <head>
+      <title>Resume Bootstrap</title>
+      <!-- Required meta tags -->
+      <meta charset="utf-8">
+      <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+      <!-- Bootstrap CSS v5.0.2 -->
+      <link rel="stylesheet" href="../../../node_modules/bootstrap/dist/css/bootstrap.min.css">
+      <!-- CSS -->
+      <link rel="stylesheet" href="./resume.css">
+
+      <style>
+          @media only screen and ( min-width:576px){
+            .sidebar{
+              background-color: rgb(32, 34, 34);
+            }}
+
+          @media ( max-width:578px ){
+              .container_grid{
+
+                  display: grid;
+                  grid-template-columns: auto;
+                  grid-template-rows: repeat(2,auto);
+                  grid-template-areas:
+                  "sidebar"
+                  "main"
+                  ;
+              }
+              .sidebar{
+                  grid-area: sidebar;
+              }
+              .main-content{
+                  grid-area: main;
+              }
+            }
+      </style>  
+      <!-- font awesome -->
+      <script src="https://kit.fontawesome.com/d2d10cf53a.js" crossorigin="anonymous"></script>
+  </head>
+
+  <body id="top">
+    <div class=" container_grid fullbody mx-0 ">
+      <div class="sidebar bg-dark">
+        <a class="navbar-brand  fw-bold  px-0 me-0" href="#top">Resume</a>
+          <div class="container">
+            <a href="#title">About</a>
+            <a href="#education">Education</a>
+            <a href="#skills">Skills</a>
+            <a href="#project">Projects</a>
+            <a href="#certificate">Certificates</a>
+            <a href="#personal-info">Personal Info.</a>
+          </div>
+      </div>
+      <div class="main-content">
+<!-- title section-->
+    <section id="title" >
+      <div class="container py-5">
+        <div class="row img-info">
+          <img src="inkal1.jpg" class="my-img col-sm-12 col-md-2 col-lg-2 img-fluid rounded-circle" alt="profile-img">
+          <div class="my-info col-sm-12 col-md-9 col-lg-10">
+            <h1 class="mb-0">Inkal Panchal</h1>
+            <h3 class="text-muted h4">Software Engineer</h3>
+            <p>I am an enthusiastic and driven Engineering graduate with Bachelor degree of Computer Engineering from the SVIT,Vasad. I am currently looking to secure a position to utilize my skills and knowledge.</p>
+            <em class="fab fa-linkedin"></em>
+            <em class="fab fa-facebook"></em>
+            <em class="fab fa-github"></em>
+          </div>
+        </div>
+    </div>
+    </section>
+<!-- contact -->
+    <section id="contact" class="m-0 bg-dark mb-5">
+      <div class="container py-5 mx-0 text-center text-white">
+        <div class="row" > 
+          <strong class="col-lg-4 col-md-4 col-sm-12 mb-2 addr">Punit Park Society, Dakor 388225</strong>
+          <em class="col-lg-4 col-md-4 col-sm-12 mb-2 fa fa-envelope email"><span class="ps-2">panchalinkal15@gmail.com</span></em>
+          <em class="col-lg-4 col-md-3 col-sm-12 mb-2 fa fa-phone call"><span class="ps-2" >9824392305</span></em>
+        </div>
+      </div>
+    </section>
+
+<!--education section  -->
+    <section id="education">
+      <div class="container py-5">
+        <h2 class="edu text-decoration-underline mb-3" style="color: #1b1b46;">EDUCATION</h2>
+        <ul >
+          <li><h4>Computer Engineering</h4></li>
+          <h4 class="h5 my-0">Sardar Vallabhbhai Patel Institute of technology, Vasad </h4>
+          <small class="text-muted">07/2018-present</small>
+          <h4 class="h6">CGPA: 8.57</h4>
+          <li><h3 class="h4 mt-3">HSC</h3></li>
+          <h4 class="my-0" >Shree Sansthan High School, Dakor</h4>
+          <small class="text-muted justify-content-sm-end">06/2016-04/2018</small>
+          <h4 class="h6">Percentage: 76%</h4>
+              
+          <li><h3 class="h4 mt-3">SSC</h3></li>
+          <h4 class="my-0">Shree Sansthan High School, Dakor</h4>
+          <small class="text-muted">06/2014-04/2016</small>
+          <h4 class="h6">Percentage: 89%</h4>
+        </ul>
+      </div>
+    </section>
+<!-- skills section -->
+    <section id="skills">
+      <div class="container py-5">
+          <h2 class="text-lg-start text-md-start text-decoration-underline skill" style="color: #1b1b46;">SKILLS</h2>
+          <div>
+            <h4 class="d-lg-inline-block d-md-inline-block d-sm-block mt-3 px-3 fw-bold text-lg-start text-md-start"> HTML <em class="fa fa-html5"></em></h4>
+            <h4 class="d-lg-inline-block d-md-inline-block d-sm-block mt-3 px-3 fw-bold text-lg-start text-md-start"> CSS <em class="fab fa-css3-alt"></em></h4>
+            <h4 class="d-lg-inline-block d-md-inline-block d-sm-block mt-3 px-3 fw-bold text-lg-start text-md-start"> C language <em class="fa fa-code"></em></h4>
+            <h4 class="d-lg-inline-block d-md-inline-block d-sm-block mt-3 px-3 fw-bold text-lg-start text-md-start"> Data Structure <em class="fa fa-code"></em></h4>
+            <h4 class="d-lg-inline-block d-md-inline-block d-sm-block mt-3 px-3 fw-bold text-lg-start text-md-start"> Core JAVA <em class="fab fa-java"></em></h4>
+            <h4 class="d-lg-inline-block d-md-inline-block d-sm-block mt-3 px-3 fw-bold text-lg-start text-md-start"> Basic SQL <em class="fa fa-database"></em></h4>
+          </div>  
+      </div>
+      </section>
+
+<!-- project and certificates section -->
+    <section id="project">
+      <div class="container py-5">
+          <h2 class="text-decoration-underline mb-4" style="color: #1b1b46;">PERSONAL PROJECTS</h2>
+          <h3 class="h4">Online Bus Pass Management System</h3>
+          <p class="text-muted" style="text-align: justify;">This system is a web application for students to get bus passes and renew it through online. So that ,they don't need to go at bus station in rainy season.</p>
+                 
+          <h3 class="h4">Human Skin-tone Detection</h3>
+          <p class="text-muted" style="text-align: justify;">SkinTone is an ML-Web Based online skin tone portal to detect the skin tone (i.e., Fair, Mild, or Dark) from a human face image. It provides the user about the information about their skin tone if they have a problem in knowing it. So here we are to help you out in finding your skin tone! With our web portal you all will be able to use it anywhere and anytime.</p>
+      </div>
+               
+      <div class="container py-5" id="certificate">
+        <h2 class="text-decoration-underline mt-5 mb-4" style="color: #1b1b46">CERTIFICATES</h2>
+        <h4 class=" mb-0">Web Development Internship Certificate</h4>
+        <small class="text-muted mt-0">VERZEO</small>
+      </div>
+    </section>
+    
+      <!-- personal info section -->
+    <section id="personal-info">
+      <div class="container py-5">
+        <h2 class="text-decoration-underline mb-4" style="color: #1b1b46;">PERSONAL DETAILS</h2>
+        <h4 class="h5">Date of Birth: <span class="text-muted">15th October, 2000</span></h4>
+        <h4 class="h5">Marital Status: <span class="text-muted">Single</span></h4>
+        <h4 class="mt-4 text-decoration-underline" style="color: #1b1b46;">Languages Known</h4>
+        <h4 class="h5 mb-0">English</h4>
+        <p class="small text-muted mt-0"> <em>Professional Working Proficiency</em> </p>
+        <h4 class="h5 mb-0">Gujarati</h4>
+        <p class="small text-muted mt-0"> <em>Native or Bilingual Proficiency</em></p>
+        <h4 class="h5 mb-0">Hindi</h4>
+        <p class="small text-muted mt-0"> <em>Full Professional Proñciency</em> </p>
+        
+        <h2 class="interest h4 text-decoration-underline mt-4 mb-3" style="color: #1b1b46;">INTERESTS</h2>
+        <div class="row">
+          <div class="col-md-2 col-sm-2 col-lg-2">
+            <h5 class="border-start border-2 border-secondary rounded-end d-block text-center small">Music       </h5>
+            <h5 class="border-start border-2 border-secondary rounded-end d-block text-center small">Drawing     </h5>
+            <h5 class="border-start border-2 border-secondary rounded-end d-block text-center small">Rubik's cube</h5>
+            <h5 class="border-start border-2 border-secondary rounded-end d-block text-center small">Travel      </h5>
+            <h5 class="border-start border-2 border-secondary rounded-end d-block text-center small">Coding      </h5>
+          </div>
+          <div class="col-sm-10 col-md-10 col-lg-8"><p class="text-muted" style="text-align: justify;">I like travelling to different places where can I explore the new things in my life. I eager to know new things. I love to listen music which gives me peace in my mind. Drawing and paintings make me happy. In my free time I solve different rubik's cubes. I like puzzle solving.</p></div>
+        </div>  
+      </div>
+  
+    </section>
+        </div>
+        
+    </div>
+    
+  </body>
+</html>

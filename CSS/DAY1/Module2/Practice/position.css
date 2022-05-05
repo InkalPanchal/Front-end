@@ -1,0 +1,29 @@
+div{
+    width: 100px;
+    height: 100px;
+    
+}
+
+div.static{
+    position: static;
+    border: 5px solid black;
+} 
+
+div.relative{
+    position: relative;
+    left: 130px;
+    top: 110px;
+    border: 5px solid grey;
+}
+
+div.absolute{
+    border: 10px solid green;
+    left: 130px;
+    top:160px;
+    position: absolute;
+}
+
+div.fixed{
+    border: 5px solid red;
+   
+} 

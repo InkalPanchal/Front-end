@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <h4 style="text-align:center; color:red;">Exam will be ended after 3 hours!</h4>
+    <h1>Examination Timer</h1>
+    <p id="time"></p>
+    <script type="text/javascript">
+        setTimeout(timer, 9000);
+        function timer() {
+            clearInterval(myTime);
+            alert("Exam has Ended!");
+            window.close();
+        }
+        function myTimer(){
+            const date = new Date();
+            document.getElementById("time").innerHTML = date.toLocaleTimeString();
+        }
+        var myTime = setInterval(myTimer, 1000);
+    </script>
+</body>
+</html>

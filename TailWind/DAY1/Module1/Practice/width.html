@@ -1,0 +1,86 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <title>Tailwind</title>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+    <link rel="stylesheet" href="../../../dist/css/styles.css">
+
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script src="https://cdn.tailwindcss.com?plugins=forms,typography,aspect-ratio,line-clamp"></script>
+
+    
+  </head>
+  <body>
+    <h1 class="font-bold text-3xl mb-2">Width</h1>
+    <div class="m-2 border-2 border-black rounded w-96 bg-slate-600" >w-96</div>
+    <div class="m-2 border-2 border-black rounded w-80 bg-slate-600" >w-80</div>
+    <div class="w-64 m-2 border-2 border-black rounded bg-slate-600" >w-64</div>
+    <div class="w-48 m-2 border-2 border-black rounded bg-slate-600" >w-48</div>
+    <div class="w-40 m-2 border-2 border-black rounded bg-slate-600" >w-40</div>
+    <div class="w-32 m-2 border-2 border-black rounded bg-slate-600" >w-32</div>
+    <div class="w-24 m-2 border-2 border-black rounded bg-slate-600" >w-24</div>
+
+    <div class="flex">
+      <div class="w-1/2 border-4 rounded bg-clifford">w-1/2</div>
+      <div class="w-1/2 border-4 rounded">w-1/2</div>
+    </div>
+
+    <div class="flex">
+      <div class="w-2/5 border-4 rounded">w-2/5</div>
+      <div class="w-3/5 border-4 rounded">w-3/5</div>
+    </div>
+    <div class="flex ...">
+      <div class="w-1/3 border-4 rounded">w-1/3</div>
+      <div class="w-2/3 border-4 rounded">w-2/3</div>
+    </div>
+
+    <div class="w-full border-4 rounded bg-gray-500 text-white">W-full</div>
+    <div class="w-screen border-4 rounded bg-gray-500 text-white">W-screen</div>
+    <div class="w-screen md:w-10 border-2 border-black rounded bg-slate-600">
+      w-screen md:w-10
+    </div>
+
+    <div class="w-1/2 border-4 border-black rounded hover:w-full">
+      w-1/2 hover:w-full
+    </div>
+
+    <div class="w-1/2 md:w-full border-4 border-black my-2 rounded">w-1/2 md:w-full </div>
+
+    <div class="w-[32rem] border-4 border-black my-2 rounded">w-[32rem]</div>
+
+    <span class="min-w-full border-4 border-black my-2 rounded">min-w-full</span>
+
+    <div class="w-24 min-w-full hover:min-w-0  border-4 border-black my-2 rounded">w-24 min-w-full hover:min-w-0</div>
+
+    <div class="w-24 min-w-full md:min-w-0  border-4 border-black my-2 rounded"> w-24 min-w-full md:min-w-0</div>
+
+    <div class="max-w-prose border-4 border-black my-2 rounded">max-w-prose</div>
+
+    <div class="text-sm max-w-prose  border-4 my-2 rounded">
+      <p>Oh yeah. It's the best part. It's crunchy, it's explosive, it's where the muffin breaks free of the pan and sort of does it's own thing. I'll tell you. That's a million dollor idea right there. Just sell the tops.</p>
+    </div>
+
+    <div class="text-base max-w-prose border-4 my-2 rounded">
+      <p>Oh yeah. It's the best part. It's crunchy, it's explosive, it's where the muffin breaks free of the pan and sort of does it's own thing. I'll tell you. That's a million dollor idea right there. Just sell the tops.</p>
+    </div>
+    
+    <div class="text-xl max-w-prose border-4 my-2 rounded">
+      <p>Oh yeah. It's the best part. It's crunchy, it's explosive, it's where the muffin breaks free of the pan and sort of does it's own thing. I'll tell you. That's a million dollor idea right there. Just sell the tops.</p>
+    </div>
+
+    <div class="max-w-screen-2xl border-4 my-2 rounded">
+      max-w-screen-2xl
+    </div>
+
+    <div class="max-w-sm hover:max-w-full border-4 my-2 rounded">
+      max-w-sm hover:max-w-full
+    </div>
+
+    <div class="max-w-sm md:max-w-lg border-4 my-2 rounded">
+      max-w-sm md:max-w-lg
+    </div>
+  </body>
+</html>

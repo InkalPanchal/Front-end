@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>DAY2 JS Practice Exercise2</title>
+</head>
+<body>
+    <h1>String split and convert into Array</h1>
+    <p>String:</p>
+    <p id="str1"></p>
+    <p id="str2"></p>
+    <button type="button" onclick="myFunction();">Convert string into array</button>
+    <script>
+        var str = prompt("Enter String:");
+        document.getElementById('str1').innerHTML = str;
+
+        function myFunction(){
+            const a = str.split(" ");
+            document.getElementById('str2').innerHTML = "Converted array: "+ a;
+        }
+    </script>
+</body>
+</html>

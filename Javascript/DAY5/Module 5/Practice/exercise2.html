@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Area of Rectangle</title>
+</head>
+
+<script type="text/javascript">
+    function areaOfRectangle() {
+        var l = document.getElementById("length").value;
+        var w = document.getElementById("width").value;
+        const area = new Function("l","w", "return l * w");
+        document.getElementById("area").innerHTML = "<strong>Area of rectangle is:</strong> "+area(l, w);
+    }
+</script>
+<body>
+    <h1>Area of Rectangle Using Function Constructor</h1>
+    <label for="length">Enter Length of Rectangle:</label><br>
+    <input type="number" name="length" id="length"><br>
+    <label for="width">Enter width of Rectangle:</label><br>
+    <input type="number" name="width" id="width"><br>
+    <p id="area"></p>
+    <button type="button" onclick="areaOfRectangle();">Area of Rectangle</button>
+</body >
+</html>

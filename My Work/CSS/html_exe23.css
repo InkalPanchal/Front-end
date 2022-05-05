@@ -1,0 +1,49 @@
+
+.News {
+  margin: 0;
+  padding: 5px;
+  background-color: lightgray;
+}
+
+.News > h1 {
+  margin: 10px;
+  padding: 5px;
+  background: white;
+}
+
+.News > p {
+  margin: 10px;
+  padding: 4px;
+  font-size: 90%;
+  background: white;
+}
+
+.unorder {
+  padding: 0;
+  margin: 0;
+  list-style-type: none;
+  background-color: grey;
+  overflow: hidden;
+}
+.unorder li a {
+  display: block;
+  padding: 10px;
+  text-decoration: none;
+  text-align: center;
+  color: white;
+}
+.unorder li {
+  float: left;
+}
+.unorder li a:hover {
+  color: brown;
+}
+.nav {
+  background-color: rgb(94, 88, 88);
+  padding: 5px;
+}
+.nav a {
+  color: white;
+  text-decoration: none;
+  padding: 10px;
+}

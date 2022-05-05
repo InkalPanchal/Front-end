@@ -1,0 +1,13 @@
+table{
+    text-align: center;
+}
+th{
+    padding: 4px;
+    font-size: 1.1rem;
+}
+td{
+    padding: 4px;
+}
+.sub{
+    text-align: left;
+}

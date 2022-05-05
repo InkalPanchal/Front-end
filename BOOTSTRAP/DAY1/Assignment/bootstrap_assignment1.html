@@ -1,0 +1,596 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Bootstrap_Assignment1</title>
+    <link rel="stylesheet" href="../../../node_modules/bootstrap/dist/css/bootstrap.min.css">
+    <script src="../../../node_modules/bootstrap/dist/js/bootstrap.bundle.min.js"></script>
+</head>
+<body>
+    <div id="top">
+        <div class="dropdown p-2 justify-center text-center dropDiv" style="position: fixed;">
+            <button class="dropdown-toggle btn btn-primary" style="width: 150px;" data-bs-toggle="dropdown" aria-expanded="false">Typography</button>
+            <ul class="dropdown-menu">
+                <li><a href="#headings" class="dropdown-item">Headings</a></li>
+                <li><a href="#display-class" class="dropdown-item">Display Headings</a></li>
+                <li><a href="#para" class="dropdown-item">Paragraph styleing</a></li>
+                <li><a href="#abbr" class="dropdown-item">Abbreviation</a></li>
+                <li><a href="#blockquote" class="dropdown-item">Blockquote</a></li>
+                <li><a href="#lists" class="dropdown-item">Lists</a></li>
+            </ul>
+            <button class="dropdown-toggle btn btn-secondary" style="width: 150px;" data-bs-toggle="dropdown" aria-expanded="false">Text Utilities</button>
+            <ul class="dropdown-menu">
+                <li><a href="#Text-Alignment" class="dropdown-item">Text Alignment</a></li>
+                <li><a href="#Text-Wrap" class="dropdown-item">Text wrap</a></li>
+                <li><a href="#Word Break" class="dropdown-item">Word Break</a></li>
+                <li><a href="#Text Transform" class="dropdown-item">Text Transform</a></li>
+                <li><a href="#Text size" class="dropdown-item">Text Size</a></li>
+                <li><a href="#Font Weight" class="dropdown-item">Font Weight</a></li>
+                <li><a href="#Line Height" class="dropdown-item">Line Height</a></li>
+                <li><a href="#Monospace" class="dropdown-item">Monospace</a></li>
+                <li><a href="#Reset Color" class="dropdown-item">Reset color</a></li>
+                <li><a href="#Text Decoration" class="dropdown-item">Text Decoraion</a></li>
+            </ul>
+            <button class="btn btn-success" style="width: 150px;"><a class=" text-decoration-none text-white" href="#color_utility">Color Utilities</a></button>
+            <button class="btn btn-danger" ><a class=" text-decoration-none text-white" href="#Responsive-Image">Responsive Image</a></button>
+            <button class="btn btn-warning" style="width: 150px;"><a class=" text-decoration-none text-white" href="#tbl">Table</a></button>
+            <button class="btn btn-primary" style="width: 150px;"><a class="text-decoration-none text-white" href="#fig">Figure</a></button>
+        </div>
+        <div class="w-100" style="height: 60px;"></div>
+        <h1 class="text-center bg-dark text-light p-3">Bootstrap Practice</h1>
+       
+        <!-- HEADINGS -->
+        <div id="headings" class="border border-1 border-dark p-3 m-2 py-5">
+            <h1 class="text-center">Heading</h1>
+            <h1>Heading 1 <small class="text-muted">Subtext</small></h1>
+            <h2>Heading 2</h2>
+            <h3>Heading 3</h3>
+            <h4 class="h2">Heading 4</h4>
+            <h5>Heading 5</h5>
+            <h6>Heading 6</h6>
+        
+        <br>
+        <!-- Display classes -->
+    
+            <h1 class="display-1">Display1</h1>
+            <h1 class="display-2">Display2</h1>
+            <h1 class="display-3">Display3</h1>
+            <h1 class="display-4">Display4</h1>
+            <h1 class="display-5">Display5</h1>
+            <br>
+        </div>
+    
+        <!-- Paragraph -->
+        <div id="para" class="border border-1 border-dark p-3 m-2 py-5">
+            <h1 class="text-center">Paragraph</h1>
+            <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Debitis voluptatibus voluptate eius sed aliquam aspernatur quidem itaque eos doloribus quibusdam. Saepe, reiciendis. Similique nihil tempore quibusdam? Facilis repellendus maiores quae?</p>
+            <!-- LEAD -->
+            <p class="lead">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Debitis voluptatibus voluptate eius sed aliquam aspernatur quidem itaque eos doloribus quibusdam. Saepe, reiciendis. Similique nihil tempore quibusdam? Facilis repellendus maiores quae?</p>
+        
+            <!-- style classes -->
+            <p class="mark">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Neque, architecto?</p>
+            <p class="small">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Neque, architecto?</p>
+            <p class="text-decoration-underline">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Neque, architecto?</p>
+            <p class="text-decoration-line-through">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Neque, architecto?</p>
+        
+            
+        </div>
+    
+        <!-- Abbreviation -->
+        <div id="abbr" class="border border-1 border-dark p-3 m-2 py-5" >
+    
+            <h1 class="text-center">Abbreviation</h1>
+            <p><abbr title="attribute">attr</abbr></p>
+            <p><abbr title="Hyper text markup language" class="">HTML</abbr></p>
+            <p><abbr title="Hyper text markup language" class="initialism">HTML</abbr></p>
+        </div>
+    
+        <!-- blockquote -->
+        <div id="blockquote" class="border border-1 border-dark p-3 m-2 py-5">
+            <h1 class="text-center">Blockquote</h1>
+            <blockquote>
+                Hello there!
+            </blockquote>
+            <blockquote class="blockquote">
+                Hello there!
+            </blockquote>
+        
+            <figure class="text-end">
+                <blockquote class="blockquote">
+                    Hello there!
+                </blockquote>
+                <figcaption class="blockquote-footer">
+                    Unknown
+                </figcaption>
+            </figure>
+        </div>
+    
+        <!-- Lists -->
+        <div id="lists" class="border border-1 border-dark p-3 m-2 py-5">
+            <h1 class="text-center">Lists</h1>
+            <h3>Unstyled List - Nested List</h3>
+            <ul class="list-unstyled border border-1 border-dark p-3 m-2">
+                <li>1</li>
+                <li>2</li>
+                <li>3</li>
+    
+                    <ul>
+                        <li>A</li>
+                        <li>B</li>
+                        <li>C</li>
+                    </ul>
+                
+            </ul>
+        
+            <!-- list inline -->
+            <h2 >Inline list</h2>
+            <div class="border border-1 border-dark p-3 m-2">
+    
+                <ul class="list-inline">
+                    <li class="list-inline-item">123</li>
+                    <li class="list-inline-item">456</li>
+                    <li class="list-inline-item">7890</li>
+                </ul>
+            </div>
+        </div>
+    
+        <!-- text alignment -->
+        <div id="utility" class="py-5 p-3">
+            <h1 class="text-center">Text-Utilities</h1>
+    
+            <div id="Text-Alignment" class="py-5 border border-1 border-dark p-3 m-2">
+                <h3 class="text-center">Text-Alignment</h3>
+    
+                <p class="text-start">Lorem ipsum dolor sit amet.</p>
+                <p class="text-end">Lorem ipsum dolor sit amet.</p>
+                <p class="text-center">Lorem ipsum dolor sit amet.</p>
+                <p class="text-sm-start">Lorem ipsum dolor sit amet.</p>
+                <p class="text-md-center">Lorem ipsum dolor sit amet.</p>
+                <p class="text-lg-end">Lorem ipsum dolor sit amet.</p>
+                <p class="text-xl-center">Lorem ipsum dolor sit amet.</p>
+            
+                <p class="text-start">Start aligned text on all viewport sizes.</p>
+                <p class="text-center">Center aligned text on all viewport sizes.</p>
+                <p class="text-end">End aligned text on all viewport sizes.</p>
+            
+                <p class="text-sm-start">Start aligned text on viewports sized SM (small) or wider.</p>
+                <p class="text-md-start">Start aligned text on viewports sized MD (medium) or wider.</p>
+                <p class="text-lg-start">Start aligned text on viewports sized LG (large) or wider.</p>
+                <p class="text-xl-start">Start aligned text on viewports sized XL (extra-large) or wider.</p>
+            </div>
+        
+            <!-- text wrap -->
+            <div id="Text-Wrap" class="border border-1 border-dark p-3 m-2 py-5">
+                <h3 class="text-center">Text-Wrap</h3>
+    
+                <div class="badge bg-primary text-wrap" style="width: 6rem;">
+                    This text should be wrap.
+                </div>
+                <div class="badge bg-secondary text-nowrap bd-highlight" style="color:black; width: 6rem;">
+                    This text should not wrap.
+                </div>
+            </div>
+        
+            <!-- word break -->
+            <div id="Word Break" class="border border-1 border-dark p-3 m-2 py-5">
+                <h3 class="text-center">Word Break</h3>
+    
+                <p>aaaaaaaaaaaaaaaaaaaaaaaaaaaaabbbbbbbbbbbbbbbbbbbbbbbbccccccccccccccccccccccdddddddddddddddddddddddddeeeeeeeeeeeeeeeeeeeeeefffffffffffffffffffffffgggggggggggggggggggggggggggggghhhhhhhhhhhhhhhhhhhhhhhhhhh</p>
+                <p class="text-break">aaaaaaaaaaaaaaaaaaaaaaaaaaaaabbbbbbbbbbbbbbbbbbbbbbbbccccccccccccccccccccccdddddddddddddddddddddddddeeeeeeeeeeeeeeeeeeeeeefffffffffffffffffffffffgggggggggggggggggggggggggggggghhhhhhhhhhhhhhhhhhhhhhhhhhh</p>
+            </div>
+        
+            <!-- text transform -->
+            <div id="Text Transform" class="border border-1 border-dark p-3 m-2 py-5">
+                <h3 class="text-center">Text Transform</h3>
+    
+                <p class="text-lowercase">Lowercase</p>
+                <p class="text-uppercase">Uppercase</p>
+                <p class="text-capitalize">Cap ita lize</p>
+            </div>
+        
+            <!-- font size -->
+            <div id="Text size" class="border border-1 border-dark p-3 m-2 py-5">
+                <h3 class="text-center">Text size</h3>
+    
+                <p class="fs-1">fs-1 text</p>
+                <p class="fs-2">fs-2 text</p>
+                <p class="fs-3">fs-3 text</p>
+                <p class="fs-4">fs-4 text</p>
+                <p class="fs-5">fs-5 text</p>
+                <p class="fs-6">fs-6 text</p>
+            </div>
+        
+            <!-- font weight -->
+            <div id="Font Weight" class="border border-1 border-dark p-3 m-2 py-5">
+                <h3 class="text-center">Font Weight</h3>
+    
+                <p class="fw-bold">Bold text</p>
+                <p class="fw-bolder">Bolder text</p>
+                <p class="fw-normal">Normal text</p>
+                <p class="fw-light">light text</p>
+                <p class="fw-lighter">lighter text</p>
+                <p class="fst-italic">Italic text</p>
+                <p class="fst-normal">normal text with normal font style</p>
+            </div>
+        
+            <!-- line height -->
+            <div id="Line Height" class="border border-1 border-dark p-3 m-2 py-5">
+                <h3 class="text-center">Line Height</h3>
+                <p class="lh-1">Lorem ipsum dolor sit, amet consectetur adipisicing elit. Pariatur labore facilis dicta?</p>
+                <p class="lh-sm">Lorem ipsum dolor sit, amet consectetur adipisicing elit. Pariatur labore facilis dicta?</p>
+                <p class="lh-base">Lorem ipsum dolor sit, amet consectetur adipisicing elit. Pariatur labore facilis dicta?</p>
+                <p class="lh-lg">Lorem ipsum dolor sit, amet consectetur adipisicing elit. Pariatur labore facilis dicta?</p>
+            </div>
+        
+            <!-- monospace -->
+            <div id="Monospace" class="border border-1 border-dark p-3 m-2 py-5">
+                <h3 class="text-center">Monospace</h3>
+    
+                <p class="">This is without monospace.</p>
+                <p class="font-monospace">This is in monospace.</p>
+            </div>
+        
+            <!-- reset color -->
+    
+            <div id="Reset Color" class="border border-1 border-dark p-3 m-2 py-5">
+                <h3 class="text-center">Reset Color</h3>
+    
+                <p class="">
+                    Muted with a <a href="#" class="text-reset">Reset Link</a>
+                </p>
+            </div>
+        
+            <!-- text decoration -->
+            <div id="Text Decoration" class="border border-1 border-dark p-3 m-2 py-5">
+                <h3 class="text-center">Text Decoration</h3>
+                <p class="text-decoration-underline">Lorem ipsum dolor sit amet consectetur, adipisicing elit. Sed, libero.</p>
+                <p class="text-decoration-line-through">Lorem ipsum dolor sit amet consectetur, adipisicing elit. Sed, libero.</p>
+                <a href="#" class="text-decoration-none">Lorem ipsum dolor sit, amet consectetur adipisicing elit. Id, neque!</a>
+            </div>
+        </div>
+        
+    
+        <!-- colors utilities-->
+        <div id="color_utility" class="border border-1 border-dark m-2 p-3 py-5">
+    
+            <h1 class="text-center">Colors Utilities</h1>
+            <p class="text-danger">Lorem, ipsum dolor.</p>
+            <p class="text-primary">Lorem, ipsum dolor.</p>
+            <p class="text-secondary">Lorem, ipsum dolor.</p>
+            <p class="text-success">Lorem, ipsum dolor.</p>
+            <p class="text-warning bg-dark">Lorem, ipsum dolor.</p>
+            <p class="text-info bg-dark">Lorem, ipsum dolor.</p>
+            <p class="text-light bg-dark">Lorem, ipsum dolor.</p>
+            <p class="text-dark">Lorem, ipsum dolor.</p>
+            <p class="text-body">Lorem, ipsum dolor.</p>
+            <p class="text-muted">Lorem, ipsum dolor.</p>
+            <p class="text-white bg-dark">Lorem, ipsum dolor.</p>
+            <p class="text-black-50">Lorem, ipsum dolor.</p>
+            <p class="text-white-50 bg-dark">Lorem, ipsum dolor.</p>
+        </div>
+    
+        
+    
+        <!-- description list -->
+        <div class="border border-1 border-dark p-3 m-2 py-5">
+            <h1 class="text-center mb-3">Description List</h1>
+            <dl class="row ">
+                <dt class="col-sm-3">Description lists</dt>
+                <dd class="col-sm-9">A description list is perfect for defining terms.</dd>
+        
+                <dt class="col-sm-3">Term</dt>
+                <dd class="col-sm-9" >
+                    <p>Definition for the term.</p>
+                    <p>And some more placeholder definition text.</p>
+                </dd>
+        
+                <dt class="col-sm-3">Another term</dt>
+                <dd class="col-sm-9">This definition is short, so no extra paragraphs or anything.</dd>
+        
+                <dt class="col-sm-3">Truncated term is truncated</dt>
+                <dd class="col-sm-9">This can be useful when space is tight. Adds an ellipsis at the end.</dd>
+        
+                <dt class="col-sm-3">Nesting</dt>
+                <dd class="col-sm-9">
+                    <dl class="row">
+                        <dt class="col-sm-3">Nested definition list</dt>
+                        <dd class="col-sm-9">I heard you like definition lists. Let me put a definition list inside your definition list.</dd>
+                    </dl>
+                </dd>
+                </dl>
+            </dl>
+        </div>
+    
+        <!-- images responsive -->
+        <div id="Responsive-Image" class="border border-1 border-dark p-3 m-2 py-5">
+            <h1 class="text-center mb-3">Responsive-Image</h1>
+            
+            <img src="/HTML/Day2/Module2/Practice/beer.jpg" title="class='img-fluid'" class="img-fluid" alt="beer-image">
+            <img src="/HTML/Day2/Module2/Practice/beer.jpg" title='class="img-thumbnail"' class="img-thumbnail" alt="beer-image">
+           
+            <img src="/HTML/Day2/Module2/Practice/beer.jpg" title='class="img-thumbnail rounded float-start"' class="img-thumbnail rounded float-start" alt="beer-image">
+            <img src="/HTML/Day2/Module2/Practice/beer.jpg" title='class="img-thumbnail rounded float-end"' class="img-thumbnail rounded float-end" alt="beer-image">
+            
+            <img src="/HTML/Day2/Module2/Practice/beer.jpg" title='class="rounded mx-auto d-block"' class="rounded mx-auto d-block" alt="beer-image">
+            <div class="text-center">
+                <img src="/HTML/Day2/Module2/Practice/beer.jpg" title='class="rounded"' class="rounded" alt="beer-image">
+            </div>
+            
+            <picture>
+                <source srcset="" type="image/svg+xml"> 
+                <img src="/HTML/Day2/Module2/Practice/beer.jpg " title='picture-tag class="img-fluid img-thumbnail"' class="img-fluid img-thumbnail" alt="beer-image">
+            </picture>
+        </div>
+    
+        
+        <!-- Table -->
+        <div id="tbl" class="py-5">
+            <h1 class="text-center">Table</h1>
+            <table class="table table-primary table-hover">
+                <caption class="caption-top">Background color in table</caption>
+                <thead>
+                    <tr class="table-secondary">
+                        <th>#</th>
+                        <th>First</th>
+                        <th>Last</th>
+                        <th>Address</th>
+                    </tr>     
+                </thead>
+                <tbody>
+                    <tr class="table-dark">
+                        <td>1</td>
+                        <td>Inkal</td>
+                        <td>Panchal</td>
+                        <td>Dakor, Gujarat</td>
+                    </tr>
+                    <tr class="table-danger">
+                        <td>2</td>
+                        <td>Neha</td>
+                        <td>Bhatt</td>
+                        <td>Veraval, Gujarat</td>
+                    </tr>
+                    <tr class="table-success">
+                        <td>3</td>
+                        <td>Tarmi</td>
+                        <td>Gajera</td>
+                        <td>Surat, Gujarat</td>
+                    </tr>
+                </tbody>
+               
+            </table>
+        
+            <table class="table table-dark table-striped">
+                <caption class="caption-top">Table striped</caption>
+        
+                <thead>
+                    <tr>
+                        <th>#</th>
+                        <th>First</th>
+                        <th>Last</th>
+                        <th>Address</th>
+                    </tr>     
+                </thead>
+                <tbody>
+                    <tr>
+                        <td>1</td>
+                        <td>Inkal</td>
+                        <td>Panchal</td>
+                        <td>Dakor, Gujarat</td>
+                    </tr>
+                    <tr>
+                        <td>2</td>
+                        <td>Neha</td>
+                        <td>Bhatt</td>
+                        <td>Veraval, Gujarat</td>
+                    </tr>
+                    <tr>
+                        <td>3</td>
+                        <td>Tarmi</td>
+                        <td>Gajera</td>
+                        <td>Surat, Gujarat</td>
+                    </tr>
+                </tbody>
+               
+            </table>
+        
+            <table class="table table-bordered table-sm">
+                <caption class="caption-top">Table bordered</caption>
+        
+                <thead>
+        
+                    <tr>
+                        <th>#</th>
+                        <th>First</th>
+                        <th>Last</th>
+                        <th>Address</th>
+                    </tr>     
+                </thead>
+                <tbody>
+                    <tr class="table-active">
+                        <td>1</td>
+                        <td>Inkal</td>
+                        <td>Panchal</td>
+                        <td>Dakor, Gujarat</td>
+                    </tr>
+                    <tr >
+                        <td>2</td>
+                        <td>Neha</td>
+                        <td>Bhatt</td>
+                        <td>Veraval, Gujarat</td>
+                    </tr>
+                    <tr >
+                        <td>3</td>
+                        <td>Tarmi</td>
+                        <td>Gajera</td>
+                        <td>Surat, Gujarat</td>
+                    </tr>
+                </tbody>
+            </table>
+        
+            <div class="table-responsive">
+                <h4 class="text-center">Table responsive</h4>
+                <table class="table align-middle caption-top">
+                    <caption>Table Alignment</caption>
+                    <thead>
+                        <tr>
+                            <th>#</th>
+                            <th>Lorem ipsum dolor sit.</th>
+                            <th>Lorem ipsum dolor sit.</th>
+                            <th>Lorem ipsum dolor sit.</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td>1</td>
+                            <td>Lorem ipsum dolor sit amet consectetur.</td>
+                            <td>Lorem ipsum dolor sit amet consectetur.</td>
+                            <td>Lorem ipsum dolor sit amet consectetur.</td>
+                        </tr>
+                        <tr class="align-bottom">
+                            <td>2</td>
+                            <td>Lorem ipsum dolor sit amet consectetur.</td>
+                            <td>Lorem ipsum dolor sit amet consectetur.</td>
+                            <td>Lorem ipsum dolor sit amet consectetur.</td>
+                        </tr>
+                        <tr>
+                            <td>3</td>
+                            <td>Lorem ipsum dolor sit amet consectetur.</td>
+                            <td>Lorem ipsum dolor sit amet consectetur.</td>
+                            <td>Lorem ipsum dolor sit amet consectetur.</td>
+                        </tr>
+                        <tr class="align-top">
+                            <td>4</td>
+                            <td>Lorem ipsum dolor sit amet consectetur.</td>
+                            <td>Lorem ipsum dolor sit amet consectetur.</td>
+                            <td>Lorem ipsum dolor sit amet consectetur.</td>
+                        </tr>
+                    </tbody>
+                </table>
+            </div>
+        
+            <table class="table table-striped">
+                <caption class="caption-top">Nested table</caption>
+        
+                <thead>
+                  <tr>
+                      <th>#</th>
+                      <th>First</th>
+                      <th>Last</th>
+                      <th>Address</th>
+                  </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td>1</td>
+                        <td>AAA</td>
+                        <td>BBB</td>
+                        <td>abcd, hgjkh</td>
+                    </tr>
+                  <tr>
+                    <td colspan="4">
+                      <table class="table mb-0">
+                          <caption ></caption>
+                        <thead>
+                            <tr>
+                                <th>Header</th>
+                                <th>Header</th>
+                                <th>Header</th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            <tr>
+                                <td>A</td>
+                                <td>First</td>
+                                <td>Last</td>
+                            </tr>
+                            <tr>
+                                <td>A</td>
+                                <td>First</td>
+                                <td>Last</td>
+                            </tr>
+                            <tr>
+                                <td>A</td>
+                                <td>First</td>
+                                <td>Last</td>
+                            </tr>
+                        </tbody>
+                      </table>
+                    </td>
+                  </tr>
+                  <tr>
+                      <td>3</td>
+                      <td>CCC</td>
+                      <td>DDD</td>
+                      <td>3\hggf, jh</td>
+                  </tr>
+                </tbody>
+              </table>
+        
+              <div class="table-responsive-sm">
+                  <table class="table">
+                    <caption class="caption-top">Table responsive</caption>
+                    <tr>
+                        <th>Header</th>
+                        <th>Header</th>
+                        <th>Header</th>
+                        <th>Header</th>
+                        <th>Header</th>
+                        <th>Header</th>
+                        <th>Header</th>
+                        <th>Header</th>
+                        <th>Header</th>
+                        <th>Header</th>
+                    </tr>
+                    <tbody>
+                        <tr>
+                            <td>Cell</td>
+                            <td>Cell</td>
+                            <td>Cell</td>
+                            <td>Cell</td>
+                            <td>Cell</td>
+                            <td>Cell</td>
+                            <td>Cell</td>
+                            <td>Cell</td>
+                            <td>Cell</td>
+                            <td>Cell</td>
+                        </tr>
+                        <tr>
+                            <td>Cell</td>
+                            <td>Cell</td>
+                            <td>Cell</td>
+                            <td>Cell</td>
+                            <td>Cell</td>
+                            <td>Cell</td>
+                            <td>Cell</td>
+                            <td>Cell</td>
+                            <td>Cell</td>
+                            <td>Cell</td>
+                        </tr>
+                        <tr>
+                            <td>Cell</td>
+                            <td>Cell</td>
+                            <td>Cell</td>
+                            <td>Cell</td>
+                            <td>Cell</td>
+                            <td>Cell</td>
+                            <td>Cell</td>
+                            <td>Cell</td>
+                            <td>Cell</td>
+                            <td>Cell</td>
+                        </tr>    
+                        </tbody>
+                  </table>
+              </div>
+        </div>
+    
+        <figure class="figure py-5" id="fig">
+            <img src="../../../CSS/DAY3/Module 4/Assignment/Images/book.png" title="book-image"  class="figure-img img-fluid rounded" alt="book-image">
+            <figcaption class="figure-caption text-end">Book Image</figcaption>
+        </figure>
+        
+    </div>
+    <button class="btn btn-secondary fixed-bottom upBtn" style="height: 50px; width: 50px; left: 1280px; bottom: 10px;"><a class="text-decoration-none text-white" href="#top">UP</a></button>
+</body>
+</html>

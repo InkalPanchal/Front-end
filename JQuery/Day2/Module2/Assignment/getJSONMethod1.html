@@ -1,0 +1,156 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Assignment</title>
+    <link rel="stylesheet" href="../../../../node_modules/bootstrap/dist/css/bootstrap.min.css">
+    <link rel="stylesheet" href="../../../../BOOTSTRAP/bootstrap_index.css">
+
+    <style>
+        a {
+            text-decoration: none;
+        }
+    </style>
+    
+    <script src="../../../jquery.min.js"></script>
+
+    <script>
+        $(document).ready(function(){
+            $("#btn0").one("click",function (){
+                $.getJSON("./jsonfile1.json", function(result, status){
+                $.each(result, function(index, result){
+                   // var {id ,name, email} = result;
+                   $("#tbl")
+                   .append ( $("<tr></tr>")
+                   .append($("<td></td>").html(result.code))
+                   .append($("<td></td>").html(result.meta.pagination.total))
+                   .append($("<td></td>").html(result.meta.pagination.pages))
+                   .append($("<td></td>").html(result.meta.pagination.page))
+                   .append($("<td></td>").html(result.meta.pagination.limit))
+                   )
+                
+                });
+
+            });
+        });
+            $(".btn1").click(function(){
+                $.getJSON("./jsonfile.json", function(data, status){
+                    $.each(data, function(index, data){
+                        var {id, name, email, gender, status } = data
+                    $("#tbl1")
+                    .append ( $("<tr></tr>")
+                    .append($("<td></td>").html(index))
+                    .append($("<td></td>").html(id))
+                    .append($("<td></td>").html(name))
+                    .append($("<td></td>").html(email))
+                    .append($("<td></td>").html(gender))
+                    .append($("<td></td>").html(status))
+                    )
+                    console.log()
+                    });
+                });
+            });
+            });
+            
+ 
+    </script>
+</head>
+<body>
+    
+    <div class="fullBody">
+        <nav id="navbar" class="navbar" aria-label="navbar">
+            <div class="ms-auto ">
+                <a href="../../../../My Work/HTML/HTML.html" class="px-2 text-white">HTML</a>
+                <a href="../../../../My Work/HTML/CSS.html" class="px-2 text-white">CSS</a>
+                <a href="../../../../BOOTSTRAP/bootstrap_index.html" class="px-2 text-white">BOOTSTRAP</a>
+                <a href="../../../../Javascript/javascriptIndex.html" class="px-2 text-white">JAVASCRIPT</a>
+                <a href="../../../jQueryIndex.html" class="px-2 text-white">jQuery</a>
+                <a href="../../../../TailWind/tailwindindex.html" class="px-2 text-white">TAILWIND</a>
+                
+            </div>
+        </nav>
+        <main id="main" class="p-4">
+            <button id="btn0" class="btn btn-secondary">Get Info.</button>
+
+            <table id="tbl" border="3px solid grey" class="table table-bordered h5" >
+                <caption></caption>
+                <tr>
+                    <th id=""  rowspan="3" class="text-center">Code</th>
+                    <th id="" colspan="4" class="text-center">Meta</th>
+                    
+                </tr>
+                <tr>
+                    <th id="" colspan="4" class="text-center">Pagination</th>
+                </tr>
+                <tr>
+                    <th id="" class="text-center">Total</th>
+                    <th id="" class="text-center">Pages</th>
+                    <th id="" class="text-center">Page</th>
+                    <th id="" class="text-center">Limit</th>
+                </tr>
+
+            </table>
+        <br>
+            <button class="btn1 btn btn-secondary">Get data</button>
+            <table id="tbl1" border="3" class="table table-bordered h5">
+                <caption></caption>
+                <tr>
+                    <th id="">Index</th>
+                    <th id="" >ID</th>
+                    <th id="" >Name</th>
+                    <th id="" >Email ID</th>
+                    <th id="" >Gender</th>
+                    <th id="" >Status</th>
+                </tr>
+                
+            </table>
+        </main> 
+        <div id="sidebar" class="sidebar" style="padding-right: 30px;">
+            <ul style="list-style-type: none;">
+                <li class="day"> DAY1
+                    <ul style="list-style-type: disc;">
+                        <li>Practice
+                            <ul>
+                                <li><a href="../../../Day1/Module 1/Practice/exercise1.html">Exercise1</a></li>
+                                <li><a href="../../../Day1/Module 1/Practice/exercise2.html">Exercise2</a></li>
+                                <li><a href="../../../Day1/Module 1/Practice/fadeIn_fadeOut.html">Exercise3 (fade-in,fade-out)</a></li>
+                                <li><a href="../../../Day1/Module 1/Practice/focus_blur.html">Exercise4 (focus, blur))</a></li>
+                                <li><a href="../../../Day1/Module 1/Practice/hide.html">Exercise5 (hide)</a></li>
+                                <li><a href="../../../Day1/Module 1/Practice/mouse_event.html">Exercise6 (Mouse events)</a></li>
+                                <li><a href="../../../Day1/Module 1/Practice/prac.html">Exercise7</a></li>
+                                <li><a href="../../../Day1/Module 1/Practice/toggle.html">Exercise8 (toggle)</a></li>
+                            </ul>
+                        </li>
+                        <li>Assignment
+                            <ul>
+                                <li><a href="../../../Day1/Module 1/Assignment/droplist.html">Assignment1</a></li>
+                            </ul>
+                        </li>
+                    </ul>
+                </li>
+                <li class="day"> DAY2
+                    <ul style="list-style-type: disc;">
+                        <li>Practice
+                            <ul>
+                                <li><a href="../../../Day2/Module2/Practice/traversing.html">Exercise1 (Traversing)</a></li>
+                                <li><a href="../../../Day2/Module2/Practice/siblings.html">Exercise2 (Siblings)</a></li>
+                                <li><a href="../../../Day2/Module2/Practice/Ajax_prac/ajaxMethod.html">Exercise3 (Ajax)</a></li>
+                                <li><a href="../../../Day2/Module2/Practice/Ajax_prac/getMethod.html">Exercise4 (getMethod)</a></li>
+                                <li><a href="../../../Day2/Module2/Practice/Ajax_prac/getJSONMethod.html">Exercise4 (getJSONMethod)</a></li>
+                            </ul>
+                        </li>
+                        <li>Assignment
+                            <ul>
+                            <li><a href="../../../Day2/Module2/Assignment/getJSONMethod1.html">Assignment1</a></li>
+                            </ul>
+                        </li>
+                    </ul>
+                </li>
+            </ul>
+        </div>
+    </div>
+    
+</body>
+</html>
